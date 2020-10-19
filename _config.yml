@@ -105,6 +105,7 @@ theme: Butterfly
 deploy:
  type: git
  repository: git@github.com:Eternity999/Eternity999.github.io.git
+ branch: master
 
 # Suka Theme config
 # Documents: https://theme-suka.skk.moe/docs/
