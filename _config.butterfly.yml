@@ -7,6 +7,18 @@
 #   name || link || icon
 
 menu:
+  首页: / || fa fa-home
+  时间轴: /archives/ || fa fa-archive
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-folder-open
+  清单||fa fa-heartbeat:
+    - 音乐 || /music/ || fa fa-music
+  #  - 照片 || /photos/ || fa fa-picture-o
+    - 电影 || /movies/ || fa fa-film
+  友链: /link/ || fa fa-link
+  #关于: /about/ || fa fa-heart
+  留言板: /messageboard/ || fa fa-link
+
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
@@ -774,7 +786,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -924,3 +936,12 @@ CDN:
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 
   artitalk: https://cdn.jsdelivr.net/npm/artitalk
+
+  Flink:
+  headline: 友情链接
+  info_headline: 我的Blog资料
+  name: Blog 名字： JerryC
+  address: Blog 地址： https://jerryc.me/
+  avatar: Blog 头像：https://jerryc.me/img/avatar.png
+  info: Blog 简介： 今日事,今日毕
+  comment: 如果需要交换友链,请留言
