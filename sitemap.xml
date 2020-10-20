@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hexo.lyh.best/music/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/link/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/categories/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/tags/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/photos/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/movies/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/messageboard/index.html</loc>
+    
+    <lastmod>2020-10-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hexo.lyh.best/2020/10/19/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
     
     <lastmod>2020-10-20</lastmod>
