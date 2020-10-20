@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2020/10/19/article-title/</loc>
+    <loc>https://hexo.lyh.best/2020/10/19/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
     
     <lastmod>2020-10-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/10/19/hello-world/</loc>
+    <loc>https://hexo.lyh.best/2020/10/19/hello-world/</loc>
     
     <lastmod>2020-10-19</lastmod>
     
@@ -17,7 +17,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://hexo.lyh.best/</loc>
     <lastmod>2020-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -25,7 +25,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/PT/</loc>
+    <loc>https://hexo.lyh.best/tags/PT/</loc>
     <lastmod>2020-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
