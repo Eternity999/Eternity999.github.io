@@ -2,6 +2,7 @@
 title: PT站新手指北
 date: 2020-10-19 12:24:05
 tags: PT
+cover: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603275634470&di=a4f43895034dea2b31c12995f198bd69&imgtype=0&src=http%3A%2F%2Fwww.01caijing.com%2Fu%2Fcms%2Fwww%2F201511%2F0115451271g6.jpg
 ---
 [![BTSCHOOL](https://pt.btschool.club/pic/prolink.png "BTSCHOOL - 汇聚每一个人的影响力")](https://pt.btschool.club/promotionlink.php?key=493f313256638158bfe90b22c5164eb6)
 
@@ -29,7 +30,7 @@ PT站就是一个虚拟组织，有用户，有管理员，有资源种子，有
 * 下载量： 50G
 * 魔力值： 5000
 
-国内PT站点基本上都是同一套魔力值公式：
+国内大部分使用NexusPHP这款程序的PT站点基本上都是同一套魔力值公式：
 ![魔力值](http://5b0988e595225.cdn.sohucs.com/images/20190921/b31583e9269d40ce9b8137b8dff155e5.png "魔力值计算公式")
 
 
@@ -96,6 +97,9 @@ bash install-tr-control.sh
 PT站都有启用H&R考核（Hit and Run）打击下完就跑的吸血者，所以要有自觉保种的好习惯，最少也要根据规则做种够20小时或分享率达1.0以上。
 不然再规定时间内没达到要求就会记录H&R并且只能用高额魔力值消除，H&R达到一定量就你号没了...
 下载资源后改变了位置就显示没在做种的情况，在客户端重新打开那个种子并选择你文件所在的地方为下载路径，就能自动校验并继续做种。
+希望大家都能通过PT找到想要的资源，养成做种的习惯，榨干空闲的带宽，但不要为了把数据刷得漂亮而沉迷于此。
 
 ### 高级玩法
+通过大硬盘vps或独立服务器安装seedbox程序通过rss订阅种子下载，上传量分享率数据都能刷得很快。
+PT作弊工具（JOAL、mRatio、RatioMaster）
 等我有钱搞上对等宽带、家庭NAS，买上大水管独立服务器再补充...（随缘扫下文章底部打赏即可加速此进程

@@ -124,12 +124,12 @@ aplayer:
 
 douban:
   user: 191299555
-  builtin: true
+  builtin: false
   book:
     title: 'This is my book title'
     quote: 'This is my book quote'
   movie:
-    title: 'This is my movie title'
+    title: '电影'
     quote: 'This is my movie quote'
   game:
     title: 'This is my game title'

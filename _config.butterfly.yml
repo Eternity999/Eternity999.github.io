@@ -16,7 +16,7 @@ menu:
   #  - 照片 || /photos/ || fa fa-picture-o
     - 电影 || /movies/ || fa fa-film
   友链: /link/ || fa fa-link
-  #关于: /about/ || fa fa-heart
+  关于: /about/ || fa fa-heart
   留言板: /messageboard/ || fa fa-link
 
   # Home: / || fas fa-home
