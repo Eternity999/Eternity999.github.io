@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hexo.lyh.best/2020/10/21/IP%E7%AD%BE%E5%90%8D%E6%A1%A3/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/tags/index.html</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/categories/index.html</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/about/index.html</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/2020/10/19/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/2020/10/21/%E8%8B%A5%E9%A5%AD/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/2020/10/18/hello-world/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/me/index.html</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hexo.lyh.best/music/index.html</loc>
     
     <lastmod>2020-10-20</lastmod>
@@ -10,20 +66,6 @@
   
   <url>
     <loc>https://hexo.lyh.best/link/index.html</loc>
-    
-    <lastmod>2020-10-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/categories/index.html</loc>
-    
-    <lastmod>2020-10-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/tags/index.html</loc>
     
     <lastmod>2020-10-20</lastmod>
     
@@ -50,24 +92,10 @@
     
   </url>
   
-  <url>
-    <loc>https://hexo.lyh.best/2020/10/19/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
-    
-    <lastmod>2020-10-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/2020/10/19/hello-world/</loc>
-    
-    <lastmod>2020-10-19</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://hexo.lyh.best/</loc>
-    <lastmod>2020-10-20</lastmod>
+    <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,7 +103,14 @@
   
   <url>
     <loc>https://hexo.lyh.best/tags/PT/</loc>
-    <lastmod>2020-10-20</lastmod>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/tags/%E4%BB%A3%E9%A4%90/</loc>
+    <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
