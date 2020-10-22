@@ -3,6 +3,7 @@ title: PT站新手指北
 date: 2020-10-19 12:24:05
 tags: PT
 cover: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603275634470&di=a4f43895034dea2b31c12995f198bd69&imgtype=0&src=http%3A%2F%2Fwww.01caijing.com%2Fu%2Fcms%2Fwww%2F201511%2F0115451271g6.jpg
+description: 混PT站的一些心得
 ---
 [![BTSCHOOL](https://pt.btschool.club/pic/prolink.png "BTSCHOOL - 汇聚每一个人的影响力")](https://pt.btschool.club/promotionlink.php?key=493f313256638158bfe90b22c5164eb6)
 

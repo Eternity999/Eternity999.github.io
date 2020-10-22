@@ -50,8 +50,8 @@ copy:
     limit_count: 50
 
 # social settings (社交圖標設置)
-# formal:
-#   icon: link || the description
+formal:
+   icon: link || the description
 social:
    fab fa-github: https://github.com/Eternity999 || Github
    fas fa-envelope: mailto:gdleeyh@gmail.com || Email
@@ -72,7 +72,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -165,10 +165,10 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
@@ -179,7 +179,7 @@ post_meta:
 
 # wordcount (字數統計)
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -190,7 +190,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # Post
@@ -234,7 +234,7 @@ photofigcaption: false
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
@@ -274,7 +274,8 @@ comments:
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
   use:
   # - Valine
-  # - Disqus
+   - Disqusjs
+
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -284,16 +285,16 @@ comments:
 # disqus
 # https://disqus.com/
 disqus:
-  shortname:
+  shortname: lyhbest
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  shortname:
-  siteName:
-  apikey:
-  api:
+  shortname: lyhbest
+  siteName: 
+  apikey: NTaTgGxfVf1ZY4R5GO3VKcCcGjQrff91hUTIPN6yKYDh6OhrCsTlrC0LewwhrA6v
+  api: EVvM1DnIWbolqyxbhfOka0cZajk1VKYBKFuZUZaTZckB5j7wH2kBUXvJedyhJrtY
   nocomment: # display when a blog post or an article has no comment attached
   admin:
   adminLabel:
@@ -727,7 +728,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
@@ -794,7 +795,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode

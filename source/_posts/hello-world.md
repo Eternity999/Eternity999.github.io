@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: 2020-10-18 12:24:05
+description: 第一篇博文
 ---
 Welcome to [My Blog](https://hexo.lyh.best/)!
 其实我还有另一个用wordpress程序搭建的[Blog](https://blog.lyh.best)，但由于一直咕咕咕所以是个空壳。
