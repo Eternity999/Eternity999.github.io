@@ -42,8 +42,16 @@ https://www.liues.cn/lx-1147.html（手把手教如何写一个IP签名档）
 https://www.liues.cn/lx-1327.html
 使用了高德开发者平台的API来实现IP的定位和天气的数据
 ![ip签名档](https://www.liues.cn/wp-content/uploads/2020/01/20200127_085435_41.jpg)
-存在的问题：高德的API在传入IP为国外IP或国内的内网IP都会返回空值导致缺少参数整个图片崩掉
-尝试修改了一下但并不完善，暂且咕咕咕~
+
 
 ### 注意事项
 部署的网站域名不能套用CDN否则无法获取到真实IP
+
+* 使用imagettftext()函数时报错Warning: imagettftext(): Could not find/open font。
+查手册后发现由于GD版本更新，定义字体路径参数需要使用绝对路径。
+可用获取绝对路径函数解决
+```PHP
+$fontpath = realpath('../fonts/abc.ttf');
+```
+* 使用imagettftext函数，页面不显示图片
+注释掉header那行就知道错在哪了
