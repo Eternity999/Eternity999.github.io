@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hexo.lyh.best/1998/11/29/WhoAmI/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/2020/10/29/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B%E5%B9%B3%E5%8F%B0/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/about/index.html</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hexo.lyh.best/2020/10/21/%E8%8B%A5%E9%A5%AD/</loc>
     
     <lastmod>2020-10-29</lastmod>
@@ -17,13 +38,6 @@
   
   <url>
     <loc>https://hexo.lyh.best/2020/10/21/IP%E7%AD%BE%E5%90%8D%E6%A1%A3/</loc>
-    
-    <lastmod>2020-10-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/1998/11/29/WhoAmI/</loc>
     
     <lastmod>2020-10-28</lastmod>
     
@@ -52,13 +66,6 @@
   
   <url>
     <loc>https://hexo.lyh.best/categories/index.html</loc>
-    
-    <lastmod>2020-10-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/about/index.html</loc>
     
     <lastmod>2020-10-21</lastmod>
     
@@ -117,6 +124,13 @@
   
   <url>
     <loc>https://hexo.lyh.best/tags/%E4%BB%A3%E9%A4%90/</loc>
+    <lastmod>2020-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/tags/Scratch/</loc>
     <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
