@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hexo.lyh.best/2020/10/21/%E8%8B%A5%E9%A5%AD/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/music/index.html</loc>
+    
+    <lastmod>2020-10-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hexo.lyh.best/2020/10/21/IP%E7%AD%BE%E5%90%8D%E6%A1%A3/</loc>
     
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-28</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.lyh.best/1998/11/29/WhoAmI/</loc>
     
-    <lastmod>2020-10-22</lastmod>
+    <lastmod>2020-10-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/2020/10/21/%E8%8B%A5%E9%A5%AD/</loc>
+    <loc>https://hexo.lyh.best/2020/10/25/%E6%81%AD%E5%96%9C%E7%B2%A4%E6%B8%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/</loc>
     
-    <lastmod>2020-10-22</lastmod>
+    <lastmod>2020-10-28</lastmod>
     
   </url>
   
@@ -58,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/music/index.html</loc>
-    
-    <lastmod>2020-10-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://hexo.lyh.best/link/index.html</loc>
     
     <lastmod>2020-10-20</lastmod>
@@ -95,7 +102,7 @@
 
   <url>
     <loc>https://hexo.lyh.best/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,14 +110,14 @@
   
   <url>
     <loc>https://hexo.lyh.best/tags/PT/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hexo.lyh.best/tags/%E4%BB%A3%E9%A4%90/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
