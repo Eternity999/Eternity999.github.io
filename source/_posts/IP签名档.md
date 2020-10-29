@@ -44,7 +44,63 @@ http://ip.taobao.com/outGetIpInfo?ip=$ip&accessKey=alibaba-inc
 然后服务平台选择Web服务
 ![高德开放平台.png](https://i.loli.net/2020/10/24/HvoJrXPTOBg2pFi.png)
 可以看到提供了很多api可以使用，然后就能根据api文档以及上面的项目代码替换使用了。
+#### 自己写一个api
+<details>
+  <summary>获取ip位置气温api</summary>
+```PHP
+<?php
+header('Content-Type:application/json; charset=utf-8');
+$ip=$_SERVER["REMOTE_ADDR"];    //$ip=$_GET["ip"];
+$a=parse_ini_file("city.ini");
+//查询IP所在地
+$url="http://ip.taobao.com/service/getIpInfo.php?ip=".$ip."&accessKey=alibaba-inc"; 
+$UserAgent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.04506; .NET CLR 3.5.21022; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';  
+$curl = curl_init(); 
+curl_setopt($curl, CURLOPT_URL, $url); 
+curl_setopt($curl, CURLOPT_HEADER, 0);  
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);  
+curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);  
+curl_setopt($curl, CURLOPT_ENCODING, 'gzip');  
+curl_setopt($curl, CURLOPT_USERAGENT, $UserAgent);  
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);  
+$data = curl_exec($curl);
+$data = json_decode($data, true);
+$city = $data['data']['city'];
+$cityid=$a[$city];
+//查询天气信息
+$tqurl="http://www.weather.com.cn/data/cityinfo/".$cityid.".html";
+$UserAgent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.04506; .NET CLR 3.5.21022; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';  
+$curl = curl_init(); 
+curl_setopt($curl, CURLOPT_URL, $tqurl); 
+curl_setopt($curl, CURLOPT_HEADER, 0);  
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);  
+curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);  
+curl_setopt($curl, CURLOPT_ENCODING, '');  
+curl_setopt($curl, CURLOPT_USERAGENT, $UserAgent);  
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);  
+$weatherinfo = curl_exec($curl);
+$weatherinfo = json_decode($weatherinfo, true);
+$weather = $weatherinfo['weatherinfo']['weather']; 
+$temp1 = $weatherinfo['weatherinfo']['temp1']; 
+$temp2 = $weatherinfo['weatherinfo']['temp2'];
+$data = [
+  'ip' => $ip,
+  'city' => $city,
+  'time' => date("Y-m-d"),
+  'temp1' =>$temp1,
+  'temp2'=>$temp2,
+  'weather'=>$weather,
+];
+//$arr=array('city'=>1,''=>2);
+exit(json_encode($data,JSON_UNESCAPED_UNICODE));    //使用JSON_UNESCAPED_UNICODE参数可以实现对字符不做escape和unicode处理
+?>
+```
+</details>
 
+成品：http://ip.lyh.best/api.php
+[city.ini文件](http://ip.lyh.best/city.ini)
 
 ### 注意事项
 部署的网站域名不能套用CDN否则无法获取到真实IP
@@ -58,6 +114,7 @@ $fontpath = realpath('../fonts/abc.ttf');
 * 使用imagettftext函数，页面不显示图片
 header("Content-type: image/jpeg")表明请求页面的内容是jpeg格式的图像。
 只要注释掉header那行就能显示报错了。
+* 网页访问api得到的json为乱码时，chrome进入应用商店搜索安装Set Character Encoding插件，便可以右键选择编码。
 
 ### 关联阅读
 https://www.liues.cn/lx-1147.html （手把手教如何写一个IP签名档）
