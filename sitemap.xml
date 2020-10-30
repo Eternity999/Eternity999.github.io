@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hexo.lyh.best/19981129/WhoAmI/</loc>
+    <loc>https://hexo.lyh.best/about/index.html</loc>
     
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-10-30</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.lyh.best/19981129/HelloWorld/</loc>
+    
+    <lastmod>2020-10-30</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.lyh.best/20201030/shields%E5%B0%8F%E6%A0%87%E7%AD%BE/</loc>
-    
-    <lastmod>2020-10-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/about/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -100,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/me/index.html</loc>
-    
-    <lastmod>2020-10-21</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://hexo.lyh.best/link/index.html</loc>
     
     <lastmod>2020-10-20</lastmod>
@@ -165,14 +158,14 @@
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/tags/%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://hexo.lyh.best/tags/%E5%8D%95%E7%89%87%E6%9C%BA-%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2020-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/tags/%E5%8D%95%E7%89%87%E6%9C%BA-%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <loc>https://hexo.lyh.best/tags/%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2020-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
