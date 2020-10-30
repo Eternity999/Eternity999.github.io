@@ -2,7 +2,7 @@
 title: shields数据牌
 date: 2020-10-30 06:09:07
 tags:
-cover: https://miro.medium.com/max/256/1*g3H_59pk09JWG-ev8_S9PQ.png
+cover: https://i.loli.net/2020/10/30/y8epHAfd4jcbKZC.png
 ---
 > 本文仅介绍工具，文档详细且操作简单，直接看关联阅读的教学即可
 
@@ -18,3 +18,5 @@ https://img.shields.io/badge/{左半部分标签}-{右半部分标签}-{右半�
 * [用 Substats 和 Shields.io 为你的个人主页定制动态数据小牌子](https://sspai.com/post/59593)
 * [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_cn.md)
 * [用 Shields.io 数据牌 + GitHub 统计卡片美化你的 GitHub profile](https://wonzwang.blog.csdn.net/article/details/108417017)
+
+<!-- https://miro.medium.com/max/256/1*g3H_59pk09JWG-ev8_S9PQ.png -->

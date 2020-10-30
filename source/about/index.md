@@ -4,17 +4,20 @@ date: 1998-11-29 14:57:38
 ---
 Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 接下来我将通过这篇文章简单介绍一下自己以及这个网站
-## 关于我
+
+## About Blog
+#### Domain
+网站的域名目前是 [https://lyh.best/](https://lyh.best/) 申请于去年黑五，白嫖一年后大概率会一直续下去。
+一级域名用作home page，指向了本人的一些社交平台（又实名上网冲浪了）
+* [为什么要写这个博客？](/19981129/HelloWorld/)
+
+## About Me
 目前是广东工业大学计信息与计算科学专业（粤港机器人学院） 2017 级本科生
 超级菜
 #### Platform&Tools
 [![](https://img.shields.io/badge/OS-CentOS7-33aadd?style=flat-square&logo=centos&logoColor=ffffff)](https://www.centos.org/) [![](https://img.shields.io/badge/iPhone-8Plus-999999?style=flat-square&logo=apple&logoColor=ffffff)](https://www.apple.com/) [![](https://img.shields.io/badge/Windows-10-2376bc?style=flat-square&logo=windows&logoColor=ffffff)](https://www.microsoft.com/windows/get-windows-10) [![](https://img.shields.io/badge/IDE-Visual%20Studio%20Code-blue?style=flat-square&logo=visual-studio-code&logoColor=ffffff)](https://code.visualstudio.com/) [![](https://img.shields.io/badge/-Node.js-43853d?style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/) [![](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=ffffff)](https://www.php.net/) [![](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=ffffff)](https://www.docker.com/) [![](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://html.spec.whatwg.org/) [![](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/) [![](https://img.shields.io/badge/-JavaScript-f7e018?style=flat-square&logo=javascript&logoColor=white)](https://www.ecma-international.org/) [![](https://img.shields.io/badge/-Git-f05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/) [![](https://img.shields.io/badge/-Nginx-269539?style=flat-square&logo=nginx&logoColor=ffffff)](https://nginx.org/) [![](https://img.shields.io/badge/-Linux-fcc624?style=flat-square&logo=linux&logoColor=white)](https://www.linuxfoundation.org/) [![](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=flat-square&logo=Raspberry-Pi&logoColor=ffffff)](https://www.raspberrypi.org/) [![Ubuntu](https://img.shields.io/badge/-Ubuntu-E95420?style=flat-square&logo=Ubuntu&logoColor=fff)](https://ubuntu.com/)
 
 ### 了解我
-[https://lyh.best/](https://lyh.best/)是我去年黑五白嫖的名字首字母缩写域名，大概率会一直续下去。
-一级域名用home page，指向了本人的一些社交平台（又实名上网冲浪了）
-* [为什么要写这个博客？](/19981129/HelloWorld/)
-
 
 * 👨‍🎓大四应届毕业生，正在找工作，面临一毕业就失业的处境。
 * 👀知识杂乱且爱好广泛的斜杠青年
@@ -34,6 +37,7 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 * 🔍资源收藏癖，收藏从未停止，学习从未开始
 * 🌐信息检索能力强，遇事不明，搜索引擎
 * 🚧讨厌那堵墙，Across the Great Wall, we can reach every corner in the world
+* 😐不喜欢麻烦别人
 
 [Google](https://google.com)是永远的互联网启蒙老师，甚至在IOS上用上谷歌全家桶。
 [Telegram](https://telegram.org/)是目前世界上最好的即使通信软件，但需要科学上网，如果不是为了联系身边人并不乐意打开国内臃肿而不实用的社交软件。
@@ -48,7 +52,7 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 听音乐喜欢粤语歌，最早喜欢的是谢霆锋，初高中时最喜欢陈奕迅，去过杨千嬅演唱会，曾经因为学生优惠喜欢用 Apple Music，现在喜欢用 Spotify 听 Daily Mix，算法推荐的都很对我胃口。
 
 想要高效地了解我，最好的办法是读本站文章。
-想要深入地了解我，最好的办法是从home page中找到我的各种社交账号。
+想要深入地了解我，最好的办法是从 [home page](https://lyh.best) 中找到我的各种社交账号。
 想要联系我，请优先考虑给我写信，也可以用 [Telegram](https://t.me/wing_tele) 找到我。
 
 > 如有合适的工作机会，欢迎向我引荐（目前暂住是东莞松山湖）。或者与我交流，what do you think I should do?
@@ -64,6 +68,9 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 * 支付宝:<img src="/img/alipay.jpg" alt="支付宝" width="25%" height="25%" align="left">
 [我的聚合收款](https://merger.lyh.best)
 
+### Copyright
+本博客上的所有文章均为原创，并使用 CC BY-NC-SA 4.0 即 [知识共享 署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 协议进行许可
+若文章中有参考其他资料的内容，会在对应的位置或文章末尾注明参考资料来源
 
 <!--
 注释

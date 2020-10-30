@@ -3,6 +3,8 @@ title: Hello World！
 date: 1998-11-29 12:24:05
 description: 第一篇博文
 ---
+> Blog = Book (书) + log (日志)，中文叫博客。
+
 Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 其实我还有另一个用wordpress程序搭建的[Blog](https://blog.lyh.best)，但由于一直咕咕咕所以是个空壳。
 为了更纯粹地使用markdown写作，所以又用hexo配合github page搭建了这个静态的博客。（说好了纯粹的写作，其实还是挑选了很久用起了花里胡哨的butterfly主题）
@@ -18,7 +20,7 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 3. 分享一些常用的好东西给大家；
 
 #### 为什么不在别的平台写
-简体中文的平台审核似乎已经魔怔了，各种汉字都要被模糊成首字母不堪卒读，各平台之间互相杯葛，禁止各类爬虫，屏蔽各样的关键词，无法进行有效的信息检索。这根本就不是互联网该有的互联精神。
+如今，公开写点东西，你要顾忌的东西太多。简体中文的平台审核似乎已经魔怔了，各种汉字都要被模糊成首字母、各种词汇要转为谐音词，实在是不堪卒读，各平台之间互相杯葛，禁止各类爬虫，屏蔽各样的关键词，无法进行有效的信息检索。这根本就不是互联网该有的互联精神。
 网上频繁的炸号事件时刻提醒自己要选择好的输出环境，而且自己写的blog不用担心“此内容因违规无法查看”，不用担心被夹总夹走，假如介绍了一些不该用的工具，也不过是被墙个域名，也不至于所有文章都虚无了。
 
 #### 名字来源
@@ -28,7 +30,7 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 #### 关于本站
 有想过部署于Oracle（甲骨文）的终身免费VPS上，但担心因违反TOS或三个月未登录而被回收。
 所以本站部署于免费的github page，域名为 https://eternity999.github.io。
-由于防火墙对github.io域名的封锁，用了自定义域名 https://hexo.lyh.best。
+由于防火墙对github.io域名的封锁，用了自定义域名 https://hexo.lyh.best。域名费用大概在100多一年。
 
 #### 设想
 设想是设计成内外网访问本站会有不同的内容展示，规避国内的审查风险，使我能畅所欲言或分享一些跨越长城相关的知识经验。
@@ -36,6 +38,6 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 或者部署到vps上可以通过Nginx实现。
 以上需要后续对本blog进行迭代优化、不断折腾。（优先水多点文章）
 
-### 我
+#### 我
 是我本人了：
 <img src="https://i.loli.net/2020/10/28/7wUlNjVtX8RJHEu.jpg" width="50%" height="50%">
