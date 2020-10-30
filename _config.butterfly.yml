@@ -16,7 +16,7 @@ menu:
   #  - 照片 || /photos/ || fa fa-picture-o
     - 电影 || /movies/ || fa fa-film
   友链: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
+  关于我: /about/ || fa fa-heart
   留言板: /messageboard/ || fa fa-link
 
   # Home: / || fas fa-home
@@ -521,11 +521,11 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
+  click_to_change: true
   mobile: false
 
 # Fluttering Ribbon (動態彩帶)
