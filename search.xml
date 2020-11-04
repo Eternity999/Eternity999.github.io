@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>朋友圈转发截图生成工具</title>
+      <link href="20201104/%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BD%AC%E5%8F%91%E6%88%AA%E5%9B%BE%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/"/>
+      <url>20201104/%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BD%AC%E5%8F%91%E6%88%AA%E5%9B%BE%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>工具生成的截图，仅可用于个人应付各类强制要求转发朋友圈的情形，请勿批量生成截图或将截图用于造谣诽谤、微商宣传等非法或令人反感的用途。</p></blockquote><p>该项目为纯JS+CSS+HTML5实现的生成微信朋友圈点赞截图平台。<br>相信大家也经常收到请求帮朋友圈点赞的消息，大部分是为了集赞领各种奖品、或是为了集赞截图用来发朋友圈秀一下。大学的外联也经常有要求做朋友圈推广的任务，经常找人帮忙转发点赞的话，其实自己也不好意思，对方如果拒绝或是无视就更尴尬了。今天教大家如何自己制作朋友圈集赞截图，让你集赞不求人。<br><a href="https://akarin.dev/WechatMomentScreenshot/">点击直接使用</a><br><a href="https://51.ruyo.net/test/weixindianzan.html">镜像站</a></p><h3 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h3><p>原作者仓库地址：<a href="https://github.com/TransparentLC/WechatMomentScreenshot">https://github.com/TransparentLC/WechatMomentScreenshot</a><br>可以下载zip包 把里面文件上传服务器或静态网站托管即可部署！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>shields数据牌</title>
       <link href="20201030/shields%E5%B0%8F%E6%A0%87%E7%AD%BE/"/>
       <url>20201030/shields%E5%B0%8F%E6%A0%87%E7%AD%BE/</url>
