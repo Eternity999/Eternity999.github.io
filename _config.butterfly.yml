@@ -14,7 +14,7 @@ menu:
   清单||fa fa-heartbeat:
     - 音乐 || /music/ || fa fa-music
   #  - 照片 || /photos/ || fa fa-picture-o
-    - 电影 || /movies/ || fa fa-film
+    - 电影 || /movies/index.html || fa fa-film
   友链: /link/ || fa fa-link
   关于我: /about/ || fa fa-heart
   留言板: /messageboard/ || fa fa-link
