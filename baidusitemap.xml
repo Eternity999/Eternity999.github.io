@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hexo.lyh.best/20201104/%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BD%AC%E5%8F%91%E6%88%AA%E5%9B%BE%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-11-04</lastmod>
+    <loc>https://hexo.lyh.best/19981129/HelloWorld/</loc>
+    <lastmod>2020-11-06</lastmod>
   </url>
   <url>
-    <loc>https://hexo.lyh.best/19981129/HelloWorld/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <loc>https://hexo.lyh.best/20201019/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
+    <lastmod>2020-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://hexo.lyh.best/20201104/%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BD%AC%E5%8F%91%E6%88%AA%E5%9B%BE%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-11-04</lastmod>
   </url>
   <url>
     <loc>https://hexo.lyh.best/20201021/IP%E7%AD%BE%E5%90%8D%E6%A1%A3/</loc>
@@ -39,9 +43,5 @@
   <url>
     <loc>https://hexo.lyh.best/20201029/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B%E5%B9%B3%E5%8F%B0/</loc>
     <lastmod>2020-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://hexo.lyh.best/20201019/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
-    <lastmod>2020-10-22</lastmod>
   </url>
 </urlset> 
