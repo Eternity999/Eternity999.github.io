@@ -2,6 +2,7 @@
 title: Hello World！
 date: 1998-11-29 12:24:05
 description: 第一篇博文
+cover: https://i.loli.net/2020/11/06/gWhZ8lCfOyJ6TxY.jpg
 ---
 > Blog = Book (书) + log (日志)，中文叫博客。
 

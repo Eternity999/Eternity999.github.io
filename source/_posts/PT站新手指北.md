@@ -53,8 +53,8 @@ Windows上我使用的是uTorrent。
 VPS是在CentOS7上安装Transmission并搭配webui进行管理。（在[荒岛](https://lala.im)博客里发现的宝藏项目是真的多）
 
 安装EPEL源：
-``` 
-$ yum -y install epel-release
+```
+yum -y install epel-release
 ```
 然后直接使用yum安装
 ``` 
@@ -77,7 +77,7 @@ rpc-username是你的WEBGUI登录用户名，这里可以自定义填写。
 rpc-whitelist-enabled的值改为false。
 
 重新运行Transmission：
-``` 
+```
 systemctl start transmission-daemon
 ```
 如无意外通过浏览器访问你的VPS公网IP:端口9091应该就可以访问到Transmission的WEB界面，通过上面刚刚设置的用户名密码登录操作。
