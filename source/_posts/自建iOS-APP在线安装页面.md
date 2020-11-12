@@ -1,18 +1,23 @@
 ---
 title: 自建iOS APP在线安装页面
 date: 2020-11-12 17:51:00
-tags:
+tags: ios
+description: 转载「突破国区/ID限制 自建iOS APP在线安装页面」
+categories: 分享
 cover: https://yorkchou.com/usr/uploads/2018/12/2756551164.png
 ---
 >本文所述可能因ios的更新失效，时效性未作验证，因近期搜索发现彼萌大佬的文章删了所以mark一下，作为存档。
 ❗共享账号app的做法并不可取，有能力在外区付费购买app的请多支持开发者，同时谨慎选择淘宝等地方购买兑换码，很有可能因黑卡盗刷等信用问题对你的apple id封号甚至锁设备无法再下载软件。
 ❗使用他人的apple id切勿登入icloud，可能会被他人远程锁机。
 
-一直不少朋友借我的apple id下载小火箭（最近一小心开了两部验证，登录麻烦了很多）
+一直不少朋友借我的apple id下载小火箭（最近一小心开了两步验证，登录麻烦了很多）
 小火箭就不介绍了，是一个国区下架了的收费app，目前依旧是支持协议最多，操作最简单的网络代理app。
 
 制作在线安装页就可以绕过App Store方便快捷地直接下载app。
 需要注意的是，即便提高了下载安装的便捷度，但是安装完成后，首次打开，依旧需要填写已经购买相应APP的ID和密码，且首次登录后，由于iOS机制原因，iTunes与App Store系关联的，因此iTunes也会随之登录，如果存在敏感信息，记得首次登录后及时让对方注销或自己更改密码。
+
+#### 在线安装页
+[Get Shadowrocket](https://free.shadowrocket.online/)
 
 ## 如何制作
 以下内容大量转载自：[突破国区/ID限制 自建iOS APP在线安装页面](https://yorkchou.com/ios-app-installation.html)
@@ -26,7 +31,7 @@ iTunes 12.6.3.6是最后一个依旧支持App管理的版本[点击下载](https
 
 #### 编写ipa.plist
 .ipa的安装，还需要ipa.plist文件，下面提供一份ipa.plist范例文件：
-```
+```XML
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>

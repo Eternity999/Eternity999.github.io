@@ -1,7 +1,7 @@
 ---
 title: shields数据牌
 date: 2020-10-30 06:09:07
-tags:
+categories: 分享
 cover: https://i.loli.net/2020/10/30/y8epHAfd4jcbKZC.png
 ---
 > 本文仅介绍工具，文档详细且操作简单，直接看关联阅读的教学即可
