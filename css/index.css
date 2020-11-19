@@ -1467,6 +1467,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-hover-bg: #dcdcdc;
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
+  --card-author-bg: url("https://i.loli.net/2020/11/19/lGq8mQ4rsAiUVY6.gif");
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
@@ -2557,6 +2558,9 @@ blockquote footer cite:before {
 }
 #aside_content > .card-widget:first-child {
   margin-top: 0;
+}
+#aside_content .card-widget:nth-child(1):hover {
+  background: var(--card-author-bg);
 }
 #aside_content .card-widget {
   overflow: hidden;
