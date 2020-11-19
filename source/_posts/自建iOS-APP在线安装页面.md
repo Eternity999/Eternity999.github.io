@@ -20,6 +20,17 @@ cover: https://yorkchou.com/usr/uploads/2018/12/2756551164.png
 [Get Shadowrocket](https://free.shadowrocket.online/)
 
 ## 如何制作
+网站结构：
+```
+web
+├── index.html                 #首页（导航页）
+├── xxxxx文件夹              #用于存放静态网页所需的图片、js、css等
+         ├── img              
+         ├── js
+         ├── css
+├── 相关软件的ipa包       #必需（否则玩个🔨）
+└── ipa.plist                     #软件包以及开发者信息
+```
 以下内容大量转载自：[突破国区/ID限制 自建iOS APP在线安装页面](https://yorkchou.com/ios-app-installation.html)
 封面图片亦来自[York Chou](https://yorkchou.com/)
 ### 准备工作
