@@ -68,5 +68,8 @@ Loon的复写栏中暂时还没有直接对Request、Response的重写，但是�
 更多的脚本、插件和用法请看：
 [Loon 教程](https://github.com/chiupam/tutorial/blob/master/Loon/Plus/README.md)
 
+### 工具
+[Online regex tester and debugger](https://regex101.com/)
+
 ### 最后
 所以有好心人赞助我买个Quantumult X吗？
