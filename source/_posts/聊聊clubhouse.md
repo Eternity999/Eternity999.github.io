@@ -5,7 +5,7 @@ updated:
 tags:
 categories:
 keywords:
-description:
+description: 关于clubhouse的使用观察
 top _img:
 comments:
 cover: https://pic4.zhimg.com/v2-14a540aa983aa94c0b19326bbf44ddd0_1440w.jpg?source=172ae18b
@@ -28,7 +28,7 @@ Clubhouse在国内火起来大概是在1月31日，马斯克在社交平台发�
 ![](https://img.36krcdn.com/20210219/v2_647d87d5a7ec4c8f946c619dd24833df_img_000)
 
 ### 时间线
-2月7日有个room讨论clubhouse明天会被墙吗
+2月7日有个room讨论“clubhouse明天会被墙吗”
 2月8日被墙，+86号码无法接收验证短信
 2月16日，[aieks](https://github.com/ai-eks)在v2ex推广自己基于Python Flask + Agora SDK开发的的第三方 Clubhouse 音频播放器--OpenClubhouse。同时引发clubhouse用户注意并讨论。
 网站链接: [https://opench.aix.uy/](https://opench.aix.uy/)（2月21日被clubhouse封号）
@@ -60,7 +60,7 @@ Clubhouse在国内火起来大概是在1月31日，马斯克在社交平台发�
 #### 使用体验
 
 clubhouse的语音交流是相当低效的知识获取过程，主要是初入人群相对比较高端，提供了一个平台如此近距离地和大佬交流并有可能建立联系，你有机会举手发言和奇葩说的辩手庞颖、各种公司ceo以及不同流域的大牛交流探讨问题。但在听他们的交流时可能并不会受益太多并可能会产生巨大的焦虑感和消磨了时间。
-在被墙的前夕，大量的room管理员通过头像放二维码，导流到自己的企业微信群，转化为自己的私域流量。然后当时有个room就在讨论“惯性思维多可怕，用着Clubhouse留联系方式为什么不留iMessage？”room主@ngbin的bio则写道：我快看不下去了，还都产品经理，还都号称翻墙了都会独立思考，CH之后iOS端，那你们为啥还要加微信？还要换头像扫码？为什么不用iMessage？
+在被墙的前夕，大量的room管理员通过头像放二维码，导流到自己的企业微信群，转化为自己的私域流量。然后当时有个room就在讨论“惯性思维多可怕，用着Clubhouse留联系方式为什么不留iMessage？”room主@ngbin的bio则写道：“我快看不下去了，还都产品经理，还都号称翻墙了都会独立思考，CH之后iOS端，那你们为啥还要加微信？还要换头像扫码？为什么不用iMessage？”
 在我进的不同room里，感受最深的时香港人发起的room是相对比较有秩序的，有专门主持的人控制时间，排序发言，听起来的感受会觉得这像是一个正式的访谈节目一样。
 
 
