@@ -27,14 +27,14 @@ aside:
 Clubhouse在国内火起来大概是在1月31日，马斯克在社交平台发布了一条推文，他将于北京时间2月1日的下午两点在Clubhouse创建聊天室。
 ![](https://img.36krcdn.com/20210219/v2_647d87d5a7ec4c8f946c619dd24833df_img_000)
 由于Clubhouse只有iOS客户端以及邀请机制新用户只能邀请0-2个人，这导致的邀请码极其稀缺，在国内火爆期间一码难求，邀请码售价高达400人民币到100美元不等。
-这种邀请机制下，在Telegram出现了一种火种接力群，我也是通过这种接力邀请的方式得以尝鲜。感谢 @NFNF2046 发起的接力群。在当时[@Linmi](https://linmi.cc/)也发起了相似的接力群。
+这种邀请机制下，在Telegram出现了一种火种接力群，基本上一传一部分人一传二便能保持火种不断，我也是通过这种接力邀请的方式得以尝鲜。感谢 @NFNF2046 发起的接力群。在当时[@Linmi](https://linmi.cc/)也发起了相似的接力群。
 值得一提的是，当时有个有同样接力功能的bot@（[ClubHouseQueueBot](https://t.me/ClubHouseQueueBot)）应运而生，但存在严重的信息泄露bug，首先它会记录使用者的tg号、手机号以及Clubhouse ID，但居然能通过/info命令把所有的信息罗列出来。
 同时Clubhouse会在个人主页显示邀请者，有完整的用户邀请关系链，违规账号会被连坐处罚封号。像下文中提到的aieks的封号可能就会影响与之相关的邀请人。
 
 ### 时间线
 2月7日有个room讨论“clubhouse明天会被墙吗”
 2月8日被墙，+86号码无法接收验证短信
-2月16日，[aieks](https://github.com/ai-eks)在v2ex推广自己基于Python Flask + Agora SDK开发的的第三方 Clubhouse 音频播放器--OpenClubhouse。同时引发clubhouse用户注意并讨论。
+2月16日，[aieks](https://github.com/ai-eks)在v2ex推广自己基于Python Flask + Agora SDK开发的的第三方 Clubhouse 音频播放器项目--OpenClubhouse。同时引发clubhouse用户注意并讨论。
 网站链接: [https://opench.aix.uy/](https://opench.aix.uy/)（2月21日被clubhouse封号）
 相关新闻：
 > #互联网 #隐私 #安全 #信息安全 #Clubhouse
@@ -74,7 +74,7 @@ clubhouse的语音交流是相当低效的知识获取过程，主要是初入�
 
 这种语音room的场景，颇像面试中群面环节，果然就有人在上面举办了模拟群面相关的room，还有大量求职、招聘的room，越听越让我这还没找到工作的大四废物焦虑。
 
-根据clubhouse的算法，一加入不关注任何人是只有很少room推荐的，只有你关注更多的人，你才会看到你关注的人所在的room从而加入进去。同时，Clubhouse的room是中途没有邀请链接的，好像是只有开room的人能发room开启的预告时间以及邀请链接。所以很可能你退出了一个room的时候你follow的人也退出了，在期间你没关注房间内的人时，你就会尴尬地发现找不回那个room了。
+根据clubhouse的算法，一加入不关注任何人是只有很少room推荐的，只有你关注更多的人，你才会看到你关注的人所在的room从而加入进去。同时，Clubhouse的room是中途没有邀请链接的，好像是只有开room的人能发room开启的预告时间以及邀请链接。所以很可能你退出了一个room的时候你follow的人也退出了，在期间你没关注房间内的人时，你就会尴尬地发现找不回那个room了。（在OpenClubhouse未封号之前，则可以通过上面列出的room链接进入该房间）
 
 #### 使用场景
 感觉玩Clubhouse这样的一个语音聊天室，适合下班回家的车内或者独居的状态，无论是外放被别人听到还是在会被熟悉的人听到的情况下大放厥词，都颇为尴尬。感觉利好airpods一类的产品，有良好的收音以及降噪功能的耳机会让你在使用这个软件的同时能干别的事情，不然感觉只专注于clubhouse语音交流，实在是太低效和消磨时间了。
