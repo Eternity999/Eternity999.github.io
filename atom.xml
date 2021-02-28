@@ -6,7 +6,7 @@
   <link href="https://hexo.lyh.best/atom.xml" rel="self"/>
   
   <link href="https://hexo.lyh.best/"/>
-  <updated>2021-02-28T10:09:13.358Z</updated>
+  <updated>2021-02-28T17:37:43.574Z</updated>
   <id>https://hexo.lyh.best/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>引用GitHub的静态资源文件</title>
+    <link href="https://hexo.lyh.best/20210301/%E5%BC%95%E7%94%A8GitHub%E7%9A%84%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/"/>
+    <id>https://hexo.lyh.best/20210301/%E5%BC%95%E7%94%A8GitHub%E7%9A%84%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/</id>
+    <published>2021-02-28T17:28:59.000Z</published>
+    <updated>2021-02-28T17:37:43.574Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考<a href="https://www.zhihu.com/question/22004590">引用GitHub的静态资源文件</a></p><p>直接用 Github Raw 浏览器不执行，返回的 content-type 是 text/plain，实际上浏览器对 MIME 类型并没有强制检查，只是 Github 返回的 Header 加上了 X-Content-Type-Options: nosniff 强制浏览器执行 MIME 类型检查，于是就会报错。</p><p>解决办法：<br><a href="https://raw.githack.com/">https://raw.githack.com</a><br><a href="https://rawgit.org/">https://rawgit.org</a><br><a href="https://www.jsdelivr.com/github">https://www.jsdelivr.com/github</a></p>]]></content>
+    
+    
+    <summary type="html">解决直接用 Github Raw 浏览器报错不执行</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>宝塔面板绕过强制绑定官网账号</title>
