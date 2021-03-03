@@ -10,15 +10,15 @@ top _img:
 comments: 
 cover: 
 toc: 
-toc_ number: 
+toc_number: 
 copyright: 
-copyright _author: 
-copyright_ author _href: 
-copyright_ url: 
-copyright _info: 
+copyright_author: 
+copyright_author_href: 
+copyright_url: 
+copyright_info: 
 mathjax: 
 katex: 
 aplayer: 
-highlight_ shrink: 
+highlight_shrink: 
 aside: 
 ---
