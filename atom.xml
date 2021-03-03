@@ -6,7 +6,7 @@
   <link href="https://hexo.lyh.best/atom.xml" rel="self"/>
   
   <link href="https://hexo.lyh.best/"/>
-  <updated>2021-02-28T17:57:26.470Z</updated>
+  <updated>2021-03-03T16:44:43.043Z</updated>
   <id>https://hexo.lyh.best/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 服务器搭建 Web 版 VSCode</title>
+    <link href="https://hexo.lyh.best/20210303/Linux-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-Web-%E7%89%88-VSCode/"/>
+    <id>https://hexo.lyh.best/20210303/Linux-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-Web-%E7%89%88-VSCode/</id>
+    <published>2021-03-03T12:47:04.000Z</published>
+    <updated>2021-03-03T16:44:43.043Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://photo.lyh.best/2021/03/03/55e9728ef580a.png" alt="CoderIDE"></p><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近有一个比较火的项目上线半个月就收获了 15.8k 个 star，继续在浏览器地址栏 GitHub 域名中 “github” 后面添加 “1s”，就能通过 VS Code 界面直接预览 GitHub 上的各类项目代码。<strong>注意仅是只读的，不能在线编辑</strong>。</p><p>github1s（项目地址：<a href="https://github.com/conwnet/github1s">https://github.com/conwnet/github1s</a>），是一款纯静态的 Web 应用程序，目前基于 VS Code 1.52.1，核心使用 GitHub REST API 实现 VS Code 扩展。</p><h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>Visual Studio Code 是微软的一款代码编辑器，使用 TypeScript + Electron 开发，最新版本的 VSCode 已经可以在普通浏览器中运行。</p><h3 id="code-server"><a href="#code-server" class="headerlink" title="code-server"></a>code-server</h3><p>code-server的官网: <a href="https://coder.com/">https://coder.com/</a><br><img src="https://github.com/cdr/code-server/raw/main/docs/assets/screenshot.png" alt="code server"><br>建议配置：</p><ul><li>1 GB of RAM</li><li>2 cores</li></ul><p>安装教程：<a href="https://github.com/cdr/code-server/blob/main/docs/install.md">https://github.com/cdr/code-server/blob/main/docs/install.md</a><br>安装脚本：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://code-server.dev/install.sh | sh</span><br></pre></td></tr></table></figure><p>运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./code-server</span><br></pre></td></tr></table></figure><p>以守护进程运行:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> --now code-server@<span class="variable">$USER</span></span><br></pre></td></tr></table></figure><p>访问<a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a>即可。<br>登陆密码记录在<code>~/.config/code-server/config.yaml</code><br>docker一键搭建:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 8443:8443 -v <span class="string">&quot;<span class="variable">$&#123;PWD&#125;</span>:/home/<span class="variable">$&#123;USER&#125;</span>/code&quot;</span> codercom/code-server --allow-http</span><br></pre></td></tr></table></figure><p>最新版本能连接上了扩展商店，轻松安装语言包，Live Server 等拓展，还有其他的拓展可通过 .VSIX 离线包获取。VSCode扩展商店网页版：<a href="https://marketplace.visualstudio.com/vscode">https://marketplace.visualstudio.com/vscode</a>搜索扩展，进入到详情页之后，选择右下角的Download Extension下载离线包。之后在扩展界面选择Install from VSIX，选择路径安装。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://photo.lyh.best/2021/03/03/55e9728ef580a.png&quot; alt=&quot;CoderIDE&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言</summary>
+      
+    
+    
+    
+    
+    <category term="IDE" scheme="https://hexo.lyh.best/tags/IDE/"/>
+    
+  </entry>
   
   <entry>
     <title>引用GitHub的静态资源文件</title>
@@ -399,23 +422,6 @@
     
     
     <category term="单片机 机器人" scheme="https://hexo.lyh.best/tags/%E5%8D%95%E7%89%87%E6%9C%BA-%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World！</title>
-    <link href="https://hexo.lyh.best/19981129/HelloWorld/"/>
-    <id>https://hexo.lyh.best/19981129/HelloWorld/</id>
-    <published>1998-11-29T04:24:05.000Z</published>
-    <updated>2020-11-06T06:42:59.468Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Blog = Book (书) + log (日志)，中文叫博客。</p></blockquote><p>Hello！Welcome to <a href="https://hexo.lyh.best/">My Blog</a>!<br>其实我还有另一个用wordpress程序搭建的<a href="https://blog.lyh.best/">Blog</a>，但由于一直咕咕咕所以是个空壳。<br>为了更纯粹地使用markdown写作，所以又用hexo配合github page搭建了这个静态的博客。（说好了纯粹的写作，其实还是挑选了很久用起了花里胡哨的butterfly主题）</p><h2 id="为什么写这个博客"><a href="#为什么写这个博客" class="headerlink" title="为什么写这个博客"></a>为什么写这个博客</h2><p>每个人都值得拥有一个Blog（部落格），作为向外界展示自己的窗口。<br>长久以来，我都是作为一个信息和知识的获取者，从知乎和开源社区获取我需要的东西；很少输出有意义的内容到外界，原因就是自己太懒。我终于要逼自己输出点什么，记录下生活，希望能输出一些对别人有价值的东西，希望能帮助到有需要的人。我会一直坚持更新这个Blog进行一些较为完整而非碎片化的记录,作为我自己的「互联网自留地」。<br>本站也没做SEO优化，没被搜索引擎收录，暂且做个网上的小透明，分享我平凡而又快乐的生活，用来mark一些笔记，copy一些有用的资料（万一内容虚无了也有个备份）。</p><h4 id="建站初衷"><a href="#建站初衷" class="headerlink" title="建站初衷"></a>建站初衷</h4><ol><li>为了不丧失表达能力；</li><li>记录这个从无到有的过程；</li><li>分享一些常用的好东西给大家；</li></ol><h4 id="为什么不在别的平台写"><a href="#为什么不在别的平台写" class="headerlink" title="为什么不在别的平台写"></a>为什么不在别的平台写</h4><p>如今，公开写点东西，你要顾忌的东西太多。简体中文的平台审核似乎已经魔怔了，各种汉字都要被模糊成首字母、各种词汇要转为谐音词，实在是不堪卒读，各平台之间互相杯葛，禁止各类爬虫，屏蔽各样的关键词，无法进行有效的信息检索。这根本就不是互联网该有的互联精神。<br>网上频繁的炸号事件时刻提醒自己要选择好的输出环境，而且自己写的blog不用担心“此内容因违规无法查看”，不用担心被夹总夹走，假如介绍了一些不该用的工具，也不过是被墙个域名，也不至于所有文章都虚无了。</p><h4 id="名字来源"><a href="#名字来源" class="headerlink" title="名字来源"></a>名字来源</h4><p>新开github用于部署本blog时用的网名是Eternity999（是因为和名字相关，而且碰巧在看使徒行者3）<br>尽可能使用低成本的方式部署本blog使得它有机会能永恒地记录下去。</p><h4 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h4><p>有想过部署于Oracle（甲骨文）的终身免费VPS上，但担心因违反TOS或三个月未登录而被回收。<br>所以本站部署于免费的github page，域名为 <a href="https://eternity999.github.io./">https://eternity999.github.io。</a><br>由于防火墙对github.io域名的封锁，用了自定义域名 <a href="https://hexo.lyh.best.域名费用大概在100多一年./">https://hexo.lyh.best。域名费用大概在100多一年。</a></p><h4 id="设想"><a href="#设想" class="headerlink" title="设想"></a>设想</h4><p>设想是设计成内外网访问本站会有不同的内容展示，规避国内的审查风险，使我能畅所欲言或分享一些跨越长城相关的知识经验。<br>需要用到双线部署并通过DNS提供根据线路分流的功能，很可惜暂时用的CDN （CloudFlare）域名解析服务并没有根据线路类型进行解析的功能。<br>或者部署到vps上可以通过Nginx实现。<br>以上需要后续对本blog进行迭代优化、不断折腾。（优先水多点文章）</p><h4 id="我"><a href="#我" class="headerlink" title="我"></a>我</h4><p>是我本人了：<br><img src="https://i.loli.net/2020/10/28/7wUlNjVtX8RJHEu.jpg" width="50%" height="50%"></p>]]></content>
-    
-    
-    <summary type="html">第一篇博文</summary>
-    
-    
-    
     
   </entry>
   
