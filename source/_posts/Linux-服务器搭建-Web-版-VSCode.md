@@ -25,6 +25,7 @@ aside:
 ![CoderIDE](https://photo.lyh.best/2021/03/03/55e9728ef580a.png)
 ## 前言
 ### github1s
+![github1s](https://img.hellogithub.com/hellogithub/59/img/github1s.gif)
 最近有一个比较火的项目上线半个月就收获了 15.8k 个 star，继续在浏览器地址栏 GitHub 域名中 “github” 后面添加 “1s”，就能通过 VS Code 界面直接预览 GitHub 上的各类项目代码。**注意仅是只读的，不能在线编辑**。
 
 github1s（项目地址：[https://github.com/conwnet/github1s](https://github.com/conwnet/github1s)），是一款纯静态的 Web 应用程序，目前基于 VS Code 1.52.1，核心原理使用 GitHub REST API 实现一个带 FileSystemProvider 的VS Code Extension。网站直接使用 GitHub Page 托管。由于对未授权的请求，API 的请求频率是有限制的，每个 IP 每小时访问限制是60次，如果遇到了 Rate Limiting 只要点击 Generate New OAuth Token 跳到自己的 GitHub Setting 页面，生成一个 Token ，在 github1s 中填入 OAuth Token 就可以提升到 5000 次啦。
