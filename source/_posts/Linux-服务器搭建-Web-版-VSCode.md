@@ -146,6 +146,8 @@ docker run -dit -p 8080:8080 \
   -e PASSWORD=mycodeserver \
   codercom/code-server:3.4.1 
 ```
+注意：-e PASSWORD=mycodeserver 设置密码为mycodeserver。
+
 最新版本能连接上了扩展商店，轻松安装语言包，Live Server 等拓展，还有其他的拓展可通过 .VSIX 离线包获取。VSCode扩展商店网页版：[https://marketplace.visualstudio.com/vscode](https://marketplace.visualstudio.com/vscode)搜索扩展，进入到详情页之后，选择右下角的Download Extension下载离线包。之后在扩展界面选择Install from VSIX，选择路径安装。
 
 ### WebIDE
