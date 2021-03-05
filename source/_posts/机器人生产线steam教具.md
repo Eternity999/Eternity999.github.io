@@ -1,11 +1,11 @@
 ---
-title: 机器人生产线steam教具
+title: 机器人生产线STEAM教具
 date: 2021-02-26 23:09:59
 updated:
-tags:
-categories:
+tags: '机器人'
+categories: 机器人学院
 keywords:
-description:
+description: 为STEAM教育机构设计的一款教学用具
 top _img:
 comments:
 cover: https://photo.lyh.best/2021/02/26/5e2c16d473cc9.png

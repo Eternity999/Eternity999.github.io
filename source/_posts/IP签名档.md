@@ -2,6 +2,7 @@
 title: IP签名档
 date: 2020-10-21 15:55:21
 cover: https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2592365053,514857686&fm=26&gp=0.jpg
+description: 论坛签名档显示访问者信息的图片，换上自己写的 API
 ---
 > 文中提及的免费api具有时效性，很可能在未来失效，请尽量使用靠谱可用的api。
 

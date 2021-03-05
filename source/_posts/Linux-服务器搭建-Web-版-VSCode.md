@@ -5,7 +5,7 @@ updated:
 tags: IDE
 categories:
 keywords:
-description:
+description: 关于VS Code的一些二次开发产品以及Web IDE
 top _img: https://photo.lyh.best/2021/03/03/55e9728ef580a.png
 comments:
 cover: https://photo.lyh.best/2021/03/03/36661ed1a7d26.png
@@ -24,18 +24,34 @@ aside:
 ---
 ![CoderIDE](https://photo.lyh.best/2021/03/03/55e9728ef580a.png)
 ## 前言
+Visual Studio Code 是微软的一款代码编辑器，使用 TypeScript + Electron 开发。曾经在 Ubuntu 使用 ROS 的时候，就发现默认的安装的 IDE 竟然和 VS Code 像素级相似，然后知道它作为开源的项目可以成二次开发各式各样的产品，直到最近大火的 github1s 项目，让我重新对 VS Code 好奇起来。同时也顺手在 VPS 上搭建了个云端 IDE 方便在外的时候也能够用 iPad 在浏览器里修改下代码。
+
 ### github1s
 ![github1s](https://img.hellogithub.com/hellogithub/59/img/github1s.gif)
 最近有一个比较火的项目上线半个月就收获了 15.8k 个 star，继续在浏览器地址栏 GitHub 域名中 “github” 后面添加 “1s”，就能通过 VS Code 界面直接预览 GitHub 上的各类项目代码。**注意仅是只读的，不能在线编辑**。
 
 github1s（项目地址：[https://github.com/conwnet/github1s](https://github.com/conwnet/github1s)），是一款纯静态的 Web 应用程序，目前基于 VS Code 1.52.1，核心原理使用 GitHub REST API 实现一个带 FileSystemProvider 的VS Code Extension。网站直接使用 GitHub Page 托管。由于对未授权的请求，API 的请求频率是有限制的，每个 IP 每小时访问限制是60次，如果遇到了 Rate Limiting 只要点击 Generate New OAuth Token 跳到自己的 GitHub Setting 页面，生成一个 Token ，在 github1s 中填入 OAuth Token 就可以提升到 5000 次啦。
-还有一个配套同名的 Chrome 插件，只要上 chrome web store 上搜索 [github1s](https://chrome.google.com/webstore/search/github1s) 就有啦.
+还有一个配套同名的 Chrome 插件，只要上 chrome web store 上搜索 [github1s](https://chrome.google.com/webstore/search/github1s) 即可得。
+
+### WebIDE
+通过浏览器访问IDE，实现云端开发环境获取、代码编写、编译调试、运行预览、访问代码仓库、命令行执行等能力，同时支持丰富的插件扩展。
+可以让开发者拥有一个统一、标准化的开发环境，节省了安装配置和维护组件的成本，可以更加专注于开发本身。
+WebIDE已经有了一段时间的发展，不同的组织和厂商，先后推出了多种工具和产品。
+* AWS Cloud9：[https://aws.amazon.com/cloud9/](https://github.com/features/codespaces)
+* Eclipse Che：[http://www.eclipse.org/che/](https://github.com/features/codespaces)
+* 腾讯扣钉：[https://cloudstudio.net/](https://github.com/features/codespaces)
+* repl.it：[https://repl.it/](https://github.com/features/codespaces)
+GitLab、Gitee等开源代码托管服务也先后发布了 WebIDE 功能。
+例如，Github 推出了基于 VS Code 的的 Codespaces [https://github.com/features/codespaces](https://github.com/features/codespaces)
+Codespaces 集成浏览器版 VS Code 编辑器，支持代码补全、导航、扩展、终端访问等功能，具备完整的 Visual Studio Code 体验。
 
 ## 搭建 Web 版 VSCode 作为云端IDE
+
 ### VSCode
-Visual Studio Code 是微软的一款代码编辑器，使用 TypeScript + Electron 开发。
+
 VS Code 1.40 之后，开发者已经可以直接从 VS Code 的源代码编译出 Web 版 VS Code。更多内容，查看 VS Code 1.40 的发布说明： [https://code.visualstudio.com/updates/v1_40](https://code.visualstudio.com/updates/v1_40)
-#### CentOS7.9部署
+
+#### CentOS7 部署
 安装依赖：
 ```bash
 yum install -y make  # make
@@ -99,7 +115,11 @@ firewall-cmd --reload
 systemctl stop firewalld
 systemctl disable firewalld
 ```
-### code-server
+##### 排查故障
+1. error Command failed with signal "SIGKILL".
+一般因为内存不足，进程被系统强杀了，加够 swap 空间可以解决。
+
+### Code-Server
 code-server的官网: [https://coder.com/](https://coder.com/)
 项目仓库：[https://github.com/cdr/code-server](https://github.com/cdr/code-server)
 ![code server](https://github.com/cdr/code-server/raw/main/docs/assets/screenshot.png)
@@ -119,6 +139,7 @@ code-server 是 [Coder公司](https://coder.com/) 基于VSCode的开源项目，
 * 2 cores
 
 安装教程：[https://github.com/cdr/code-server/blob/main/docs/install.md](https://github.com/cdr/code-server/blob/main/docs/install.md)
+#### 常规部署
 安装脚本：
 ```bash
 curl -fsSL https://code-server.dev/install.sh | sh
@@ -133,6 +154,7 @@ sudo systemctl enable --now code-server@$USER
 ```
 访问[http://127.0.0.1:8080](http://127.0.0.1:8080)即可。
 登陆密码记录在```~/.config/code-server/config.yaml```
+#### Docker部署
 docker一键搭建:
 ```bash
 docker run -dit -p 8080:8080 \
@@ -150,17 +172,6 @@ docker run -dit -p 8080:8080 \
 
 最新版本能连接上了扩展商店，轻松安装语言包，Live Server 等拓展，还有其他的拓展可通过 .VSIX 离线包获取。VSCode扩展商店网页版：[https://marketplace.visualstudio.com/vscode](https://marketplace.visualstudio.com/vscode)搜索扩展，进入到详情页之后，选择右下角的Download Extension下载离线包。之后在扩展界面选择Install from VSIX，选择路径安装。
 
-### WebIDE
-通过浏览器访问IDE，实现云端开发环境获取、代码编写、编译调试、运行预览、访问代码仓库、命令行执行等能力，同时支持丰富的插件扩展。
-可以让开发者拥有一个统一、标准化的开发环境，节省了安装配置和维护组件的成本，可以更加专注于开发本身。
-WebIDE已经有了一段时间的发展，不同的组织和厂商，先后推出了多种工具和产品。
-* AWS Cloud9：https://aws.amazon.com/cloud9/
-* Eclipse Che：http://www.eclipse.org/che/
-* 腾讯扣钉：https://cloudstudio.net/
-* repl.it：https://repl.it/
-GitLab、Gitee等开源代码托管服务也先后发布了 WebIDE 功能。
-例如，Github 推出了基于 VS Code 的的 Codespaces https://github.com/features/codespaces
-Codespaces 集成浏览器版 VS Code 编辑器，支持代码补全、导航、扩展、终端访问等功能，具备完整的 Visual Studio Code 体验。
 
 ### 参考资料
 [VSC - VS Code 运行Web IDE](https://www.cnblogs.com/anliven/p/13363811.html)
