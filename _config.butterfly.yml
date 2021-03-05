@@ -643,7 +643,7 @@ aside:
       link: https://github.com/Eternity999
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 本博客内容多为个人工作与学习的记录，少部分内容来自于网络并略有修改，已尽力标明原文链接和转载说明。如有冒犯，即刻删除！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
