@@ -6,7 +6,7 @@
   <link href="https://hexo.lyh.best/atom.xml" rel="self"/>
   
   <link href="https://hexo.lyh.best/"/>
-  <updated>2021-03-06T17:20:03.356Z</updated>
+  <updated>2021-03-06T18:10:05.120Z</updated>
   <id>https://hexo.lyh.best/</id>
   
   <author>
@@ -17,22 +17,60 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>GDUT粤港机器人学院</title>
+    <title>地址栏域名中插入神奇的宝贝</title>
+    <link href="https://hexo.lyh.best/20210307/%E5%9C%B0%E5%9D%80%E6%A0%8F%E5%9F%9F%E5%90%8D%E4%B8%AD%E6%8F%92%E5%85%A5%E7%A5%9E%E5%A5%87%E7%9A%84%E5%AE%9D%E8%B4%9D/"/>
+    <id>https://hexo.lyh.best/20210307/%E5%9C%B0%E5%9D%80%E6%A0%8F%E5%9F%9F%E5%90%8D%E4%B8%AD%E6%8F%92%E5%85%A5%E7%A5%9E%E5%A5%87%E7%9A%84%E5%AE%9D%E8%B4%9D/</id>
+    <published>2021-03-06T17:46:19.000Z</published>
+    <updated>2021-03-06T18:10:05.120Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="神奇工具"><a href="#神奇工具" class="headerlink" title="神奇工具"></a>神奇工具</h2><h3 id="github1s"><a href="#github1s" class="headerlink" title="github1s"></a>github1s</h3><p>上次关于 VS Code 的博文里有提到过。<br><img src="https://img.hellogithub.com/hellogithub/59/img/github1s.gif" alt="github1s"></p><h4 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h4><p>在浏览器地址栏 GitHub 域名中 “github” 后面添加 “1s”，就能通过 VS Code 界面直接预览 GitHub 上的各类项目代码。<strong>注意仅是只读的，不能在线编辑</strong>。</p><h3 id="wn-run"><a href="#wn-run" class="headerlink" title="wn.run"></a>wn.run</h3><p><a href="https://wanneng.run/cn/">万能命令</a></p><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>wn万能命令是一个在线工具快捷跳转平台，将各种高质量的在线工具按应用站点聚合起来，让你以方便快捷好记的方式寻找和使用网页型在线工具。<br>浏览任意网页时，输入这个万能命令 wn.run/ 或点击一下固定的书签，就会展示出用于该网页的各种附加在线工具，比如 快速查看该网页历史存档(网页被删了找回)、下载该网页的视频音乐文件(默认无法下载或需要安装app登陆等)、快速网页翻译(默认手机端网页翻译会比较繁琐)、快速网页长截图、查看电商历史价格等，并且点击工具时一般会直达针对该网页的功能详情页。</p><p>特点：</p><ol><li>方便快捷，只需输入一个命令或点击一下书签</li><li>无需下载、即用即走</li><li>无平台限制，pc、android、ios等都可使用</li><li>按应用站点分类，快捷寻找到可用的工具，过滤掉无关的工具</li><li>一般直接到达用于该网页的工具详情页</li><li>收录了很多高质量的工具</li></ol><h4 id="使用方式-1"><a href="#使用方式-1" class="headerlink" title="使用方式"></a>使用方式</h4><ol><li><p>万能命令方式<br>在任何网页的网址前面加上 wn.run/ (万能命令，wn为万能拼音简称，run为运行、命令的意思)，即可展示用于该网页的在线工具，并且点击工具时一般会直达针对该网页的功能详情页，无需再复制和粘贴网页链接。<br>例如：<br><a href="https://item.jd.com/5225346.html">https://item.jd.com/5225346.html</a><br>在网址前面加上wn.run/ ，变为<br><a href="https://wanneng.run/https:/item.jd.com/5225346.html">wn.run/https://item.jd.com/5225346.html</a></p></li><li><p>书签脚本方式<br>第一步：拖动下方按钮到浏览器的书签栏(也称网页收藏夹)，相当于添加一个网页小书签，但书签的网址项里填的是一串脚本。 <a href="https://wanneng.run/fu/article/10.html">详细说明</a></p></li></ol><div class="widget-btn">拖动右侧超链接到书签栏<a style="cursor:move;" href="javascript:(function(){window.open(&quot;https://wanneng.run/f/#&quot;+document.location.href)})()" onclick="alert('请把按钮拖动到书签栏');return false;">万能命令书签</a></div><p>如果是移动端浏览器或其他pc浏览器，无法用上面拖动的方式，可以手动添加一个书签，书签名称可以自定义，比如“万能命令书签”，并在书签的网址项里输入下面的代码。 <a href="https://wanneng.run/fu/article/11.html">ios使用书签脚本</a> <a href="https://wanneng.run/fu/article/12.html">android使用书签脚本</a></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript:(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">window</span>.open(<span class="string">&quot;https://wanneng.run/f/#&quot;</span>+<span class="built_in">document</span>.location.href)&#125;)()</span><br></pre></td></tr></table></figure><p>第二步：后面浏览任意网页时，有小需求了，只需点击一下书签栏里的“万能命令书签”，即可马上展示用于该网页的各类工具。</p><h3 id="VVV"><a href="#VVV" class="headerlink" title="VVV"></a>VVV</h3><p><a href="http://www.html22.com/zh/">网页转换助手</a></p><h4 id="使用方式-2"><a href="#使用方式-2" class="headerlink" title="使用方式"></a>使用方式</h4><p>在百度文库的地址栏链接中 “baidu” 后加上 “vvv” 即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;神奇工具&quot;&gt;&lt;a href=&quot;#神奇工具&quot; class=&quot;headerlink&quot; title=&quot;神奇工具&quot;&gt;&lt;/a&gt;神奇工具&lt;/h2&gt;&lt;h3 id=&quot;github1s&quot;&gt;&lt;a href=&quot;#github1s&quot; class=&quot;headerlink&quot; title=&quot;g</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中文写作排版指南</title>
+    <link href="https://hexo.lyh.best/20210307/%E4%B8%AD%E6%96%87%E5%86%99%E4%BD%9C%E6%8E%92%E7%89%88%E6%8C%87%E5%8D%97/"/>
+    <id>https://hexo.lyh.best/20210307/%E4%B8%AD%E6%96%87%E5%86%99%E4%BD%9C%E6%8E%92%E7%89%88%E6%8C%87%E5%8D%97/</id>
+    <published>2021-03-06T17:23:58.000Z</published>
+    <updated>2021-03-06T17:43:16.622Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不知不觉本 blog 已经记录了 40k 的字数了，决定要学习一下以下的排版规则用以规范自己的输出内容。<br>先 Mark 了再说，收藏了等于学了。（松鼠症晚期了~）</p></blockquote><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://sspai.com/post/37815">少数派写作排版指南</a><br><a href="https://mazhuang.org/wiki/chinese-copywriting-guidelines/">中文文案排版指北（简体中文版）</a><br><a href="https://github.com/sparanoid/chinese-copywriting-guidelines">中文文案排版指北</a><br><a href="https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html">中文技术文档写作风格指南</a></p><p>cover图片来源：<a href="https://www.zhangxiaochun.com/">Jimmy Cheung</a></p>]]></content>
+    
+    
+    <summary type="html">学习一下如何规范自己的输出内容ᕱ⑅ᕱ</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GDUT粤港机器人学院简介</title>
     <link href="https://hexo.lyh.best/20210306/GDUT%E7%B2%A4%E6%B8%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/"/>
     <id>https://hexo.lyh.best/20210306/GDUT%E7%B2%A4%E6%B8%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/</id>
     <published>2021-03-06T14:16:01.000Z</published>
-    <updated>2021-03-06T17:20:03.356Z</updated>
+    <updated>2021-03-06T17:25:14.341Z</updated>
     
     <content type="html"><![CDATA[<h3 id="相关介绍"><a href="#相关介绍" class="headerlink" title="相关介绍"></a>相关介绍</h3><p><a href="https://cxcy.gdut.edu.cn/info/1087/1428.htm">粤港机器人联合学院简介</a><br><a href="https://zsb.gdut.edu.cn/info/1113/2742.htm">粤港机器人联合学院【机器人工程专业】</a><br><a href="http://www.xbotpark.com/robotic/">xbotpark粤港机器人学院</a><br><a href="https://m.sohu.com/a/306842205_201466">《香港文汇报》整版报道广工粤港机器人学院育人成果</a></p><iframe width="100%" height="500" src="http://www.xbotpark.com/robotic/"></iframe><h3 id="招新宣传视频"><a href="#招新宣传视频" class="headerlink" title="招新宣传视频"></a>招新宣传视频</h3><p><video src="https://photo.lyh.best/2021/03/06/bd4fa18c9d8a0.mp4" alt="广东工业大学粤港机器人学院 2018 宣传视频_腾讯视频.mp4" title="广东工业大学粤港机器人学院 2018 宣传视频_腾讯视频.mp4" width="100%" height="100%" controls="controls"></video><br><video src="https://photo.lyh.best/2021/03/07/9f5bae8d56297.mp4" alt="广工招新宣传视频.mp4" title="广工招新宣传视频.mp4" width="100%" height="100%" controls="controls"></video></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h3 id=&quot;相关介绍&quot;&gt;&lt;a href=&quot;#相关介绍&quot; class=&quot;headerlink&quot; title=&quot;相关介绍&quot;&gt;&lt;/a&gt;相关介绍&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://cxcy.gdut.edu.cn/info/1087/1428.htm&quot;&gt;粤港机器人联合学</summary>
-      
+    <summary type="html">我所在学院的相关介绍</summary>
     
     
     
+    <category term="机器人学院" scheme="https://hexo.lyh.best/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/"/>
+    
+    
+    <category term="机器人" scheme="https://hexo.lyh.best/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
@@ -352,44 +390,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>若饭</title>
-    <link href="https://hexo.lyh.best/20201021/%E8%8B%A5%E9%A5%AD/"/>
-    <id>https://hexo.lyh.best/20201021/%E8%8B%A5%E9%A5%AD/</id>
-    <published>2020-10-21T07:05:41.000Z</published>
-    <updated>2020-11-12T13:00:19.062Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Rob 越来越憎恨不得不吃饭这件事。他开始以工程学的视角来反思食物问题，并且认为人们为了生存而吃各种各样的食物实在是特么太低效的行为了。</p></blockquote><p>&emsp;&emsp;硅谷有家叫Soylent的食品科技公司，老板是个程序员，觉得吃饭很麻烦，致力于将人体所需的营养物质数据化，然后以各种形式的代餐（能量棒、粉末等）来取代食品。与一般的医用代餐不同，他们还会在口味上做出改良，让代餐更可口。以满足健身、减肥等对摄入营养有严格要求的人群。同时，还把营养成分和配方公开（开源），不停地更新改良进行版本迭代。这确实是一种非常GEEK的行为。<br>&emsp;&emsp;若饭就是Soylent的中国版本，也在开源并迭代中。<br>&emsp;&emsp;看了若饭创始人说的若饭的受众定位是「三餐不规律不健康的人」，我就在想：嗯，是我没错了。</p><h3 id="亲身体验"><a href="#亲身体验" class="headerlink" title="亲身体验"></a>亲身体验</h3><ul><li>口感：比豆浆稍微粘稠，味道算比较好入口。比压缩饼干体验好太多。</li><li>饱腹感：感觉像没吃东西，总想吃东西，未习惯的时候饿得很快。</li><li>优点：高效便捷充饥、精确的营养摄入</li><li>建议：只要不用来长期当饭吃还是没问题的，不然会减弱肠胃功能和咀嚼的能力。</li></ul><blockquote><p>修复吃饭的BUG<br>&emsp;&emsp;其实入手的初衷源于我吃腻了松山湖的外卖了，而且以我不规律的作息以及松山湖外卖配送费真的很贵，如果“吃饭”并不是一件享受的事情，即使时间有余裕，也不会想把时间花在吃饭上面的，不是吗？<br>&emsp;&emsp;可惜后来事实证明，这根本就没替代到我的一日三餐，我就算喝了过一会还是忍不住叫上外卖，所以它的作用对我来说可能是作为补充营养的蛋白粉替代品比较合适。而用来应付早餐也不失为一个不错的选择。</p></blockquote><p>2020.11.9更 若饭v2.9固体粉末版本 口感不如液体版，粉末冲泡会结块不能很好地溶解（蛋白粉也这样）<br>2020.11.11更 双十一没什么好买的，续了一波液体版</p><h3 id="关联阅读"><a href="#关联阅读" class="headerlink" title="关联阅读"></a>关联阅读</h3><p><a href="https://sspai.com/post/57374">通过对比soylent和若饭，谈谈我对代餐的理解</a><br><a href="https://sspai.com/post/38886">Soylent 代餐一年食用体验</a></p>]]></content>
-    
-    
-    <summary type="html">很明显，我又在上网冲浪过程中被种草了。（社畜的人饲料）</summary>
-    
-    
-    
-    
-    <category term="代餐" scheme="https://hexo.lyh.best/tags/%E4%BB%A3%E9%A4%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PT站新手指北</title>
-    <link href="https://hexo.lyh.best/20201019/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/"/>
-    <id>https://hexo.lyh.best/20201019/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</id>
-    <published>2020-10-19T04:24:05.000Z</published>
-    <updated>2020-11-05T10:48:06.777Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://pt.btschool.club/promotionlink.php?key=493f313256638158bfe90b22c5164eb6"><img src="https://pt.btschool.club/pic/prolink.png" alt="BTSCHOOL" title="BTSCHOOL - 汇聚每一个人的影响力"></a></p><p>碰巧国庆期间遇上了<a href="https://pt.btschool.club/promotionlink.php?key=493f313256638158bfe90b22c5164eb6">PTSCHOOL</a>的开放注册，并快速顺利通过新人考核。记录一下混PT站的心得。</p><h2 id="PT站新手指北"><a href="#PT站新手指北" class="headerlink" title="PT站新手指北"></a>PT站新手指北</h2><h3 id="什么是PT站"><a href="#什么是PT站" class="headerlink" title="什么是PT站"></a>什么是PT站</h3><p>故事需要先从BT讲起，BT是一种互联网上新兴的P2P传输协议，全名叫”BitTorrent”。BT下载的特点是下载的人越多，文件下载速度就越快。PT是Private Tracker的缩写，简而言之是私有化或者封闭小圈子的BT。<br>PT和BT有两个区别：</p><ol><li>私密范围内下载<br>只允许本站用户下载，不允许用户将种子公开上传</li><li>进行流量统计<br>网站会统计每一个用户的下载量和上传量，下载量和上传量在一定程度上决定着用户的等级，有没有权限下载文件。每一个用户注册后会得到一个passkey，用户从网站里面下载的种子里面包含了私人的passkey。通过passkey识别每一个用户，统计每一个用户的下载、上传和做种时间等等。</li></ol><p>PT站就是一个虚拟组织，有用户，有管理员，有资源种子，有规范，有考核机制……，说人话，就是要“人人为我，我为人人”的一个资源共享Team。</p><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>大多数PT站正常状态下关闭自由注册，只允许邀请注册或会在特定日子开放注册。<br>可以通过万能的捐赠成为会员或者找到能够邀请你进入PT站的朋友。<br>（顺路求个M-team馒头PT的邀请）</p><h3 id="新人考核"><a href="#新人考核" class="headerlink" title="新人考核"></a>新人考核</h3><p>考核任务在30天内达到：</p><ul><li>做种率： 5.0 （做种/下载时间比率）</li><li>上传量： 50G</li><li>下载量： 50G</li><li>魔力值： 5000</li></ul><p>国内大部分使用NexusPHP这款程序的PT站点基本上都是同一套魔力值公式：<br><img src="http://5b0988e595225.cdn.sohucs.com/images/20190921/b31583e9269d40ce9b8137b8dff155e5.png" alt="魔力值" title="魔力值计算公式"></p><h3 id="如何通过"><a href="#如何通过" class="headerlink" title="如何通过"></a>如何通过</h3><p>做种率：只要下载完资源不删并在后台开启了bt客户端都会处于做种状态，正常挂着就能达标。<br>下载量：下载非FREE种计算量到达50G即可。<br>上传量：国内的运营商都使用NAT而并没有公网IP并且上下行并不对等，上传量是比较难提上去的，甚至是你发布的种子上传量都被一些PT盒子们抢走是你的好几倍，但是只要你选择手头上有的大文件资源发布并做种，上传量一下子就上来了毕竟再怎么差的网络环境做种只要有一个人下载完成分享率也有1.0嘛。我选择使用手头上空闲的VPS下载一些刚发布刚开始做种的文件下载，就能蹭到比较多的上传量（其实就是站内seedboxes在互拉文件刷量…）<br>魔力值：根据魔力值计算公式，把站内种子按大小倒序排列，下最小的100个种子挂着做种，即可达到每小时50魔力值。</p><h3 id="如何发布种子"><a href="#如何发布种子" class="headerlink" title="如何发布种子"></a>如何发布种子</h3><p>uTorrent种子制作<br><img src="https://i.loli.net/2020/10/20/9oX2tbTxhN6vjl5.png" alt="制作种子.png"><br>然后到PT站上发布候选，等投票通过后上传种子到网站上，再把带有个人passkey的种子下载丢进pt客户端，校验完毕就开始做种了。</p><h3 id="客户端选择"><a href="#客户端选择" class="headerlink" title="客户端选择"></a>客户端选择</h3><p>Windows上我使用的是uTorrent。<br>VPS是在CentOS7上安装Transmission并搭配webui进行管理。（在<a href="https://lala.im/">荒岛</a>博客里发现的宝藏项目是真的多）</p><p>安装EPEL源：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install epel-release</span><br></pre></td></tr></table></figure><p>然后直接使用yum安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install transmission transmission-daemon</span><br></pre></td></tr></table></figure><p>Transmission的配置文件需要在第一次启动后才会生成</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start transmission-daemon</span><br><span class="line">systemctl stop transmission-daemon</span><br></pre></td></tr></table></figure><p>然后编辑它的配置文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;var&#x2F;lib&#x2F;transmission&#x2F;.config&#x2F;transmission-daemon&#x2F;settings.json</span><br></pre></td></tr></table></figure><p>找出以下5个值进行修改<br>rpc-authentication-required的值改为true。<br>rpc-host-whitelist-enabled的值改为false。<br>rpc-password请设置一个高强度的密码。<br>rpc-username是你的WEBGUI登录用户名，这里可以自定义填写。<br>rpc-whitelist-enabled的值改为false。</p><p>重新运行Transmission：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start transmission-daemon</span><br></pre></td></tr></table></figure><p>如无意外通过浏览器访问你的VPS公网IP:端口9091应该就可以访问到Transmission的WEB界面，通过上面刚刚设置的用户名密码登录操作。</p><p>原生是Transmission WEB界面太丑了，找到网上的第三方TransmissionWEBUI项目：<a href="https://github.com/ronggang/transmission-web-control">https://github.com/ronggang/transmission-web-control</a></p><p>下载脚本并安装：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;github.com&#x2F;ronggang&#x2F;transmission-web-control&#x2F;raw&#x2F;master&#x2F;release&#x2F;install-tr-control.sh --no-check-certificate</span><br><span class="line">bash install-tr-control.sh</span><br></pre></td></tr></table></figure><p>完成后重新访问WEB界面，瞬间焕然一新，可以根据自己的需求切换不同的Theme以及移动端界面和原生界面。<br><img src="https://user-images.githubusercontent.com/8065899/38598199-0d2e684c-3d8e-11e8-8b21-3cd1f3c7580a.png" alt="Transmisson WEBUI"></p><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>记得进站先看PT站的规则和常见问题，再到论坛看置顶帖以及新手区的一些内容，很快就能熟悉并上手。<br>PT站都有启用H&amp;R考核（Hit and Run）打击下完就跑的吸血者，所以要有自觉保种的好习惯，最少也要根据规则做种够20小时或分享率达1.0以上。<br>不然再规定时间内没达到要求就会记录H&amp;R并且只能用高额魔力值消除，H&amp;R达到一定量就你号没了…<br>下载资源后改变了位置就显示没在做种的情况，在客户端重新打开那个种子并选择你文件所在的地方为下载路径，就能自动校验并继续做种。<br>希望大家都能通过PT找到想要的资源，养成做种的习惯，榨干空闲的带宽，但不要为了把数据刷得漂亮而沉迷于此。</p><h3 id="高级玩法"><a href="#高级玩法" class="headerlink" title="高级玩法"></a>高级玩法</h3><p>通过大硬盘vps或独立服务器安装seedbox程序通过rss订阅种子下载，上传量分享率数据都能刷得很快。<br>PT作弊工具（JOAL、mRatio、RatioMaster）<br>等我有钱搞上对等宽带、家庭NAS，买上大水管独立服务器再补充…（随缘扫下文章底部打赏即可加速此进程</p>]]></content>
-    
-    
-    <summary type="html">混PT站的一些心得</summary>
-    
-    
-    
-    
-    <category term="PT" scheme="https://hexo.lyh.best/tags/PT/"/>
     
   </entry>
   
