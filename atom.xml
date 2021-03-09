@@ -6,7 +6,7 @@
   <link href="https://hexo.lyh.best/atom.xml" rel="self"/>
   
   <link href="https://hexo.lyh.best/"/>
-  <updated>2021-03-09T12:32:18.003Z</updated>
+  <updated>2021-03-09T12:33:19.462Z</updated>
   <id>https://hexo.lyh.best/</id>
   
   <author>
@@ -21,21 +21,18 @@
     <link href="https://hexo.lyh.best/20210309/robocon/"/>
     <id>https://hexo.lyh.best/20210309/robocon/</id>
     <published>2021-03-09T11:40:30.000Z</published>
-    <updated>2021-03-09T12:32:18.003Z</updated>
+    <updated>2021-03-09T12:33:19.462Z</updated>
     
-    <content type="html"><![CDATA[<iframe -webkit-overflow-scrolling: touch;overflow-y: scroll;position: absolute;top: 0;right: 0;left: 0;bottom: 0;width="100%" height="500" src="https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf" type="application/pdf"></iframe>]]></content>
+    <content type="html"><![CDATA[<div class="row">    <embed src="https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
     
     
       
       
-    <summary type="html">&lt;iframe -webkit-overflow-scrolling: touch;
-overflow-y: 
-scroll;position: absolute;
-top: 0;
-right: 0;
-left: 0;
-bottom: 0;
-width=&quot;100%&quot; height</summary>
+    <summary type="html">
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
+</summary>
       
     
     
