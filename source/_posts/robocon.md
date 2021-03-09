@@ -22,4 +22,11 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-<iframe scroll;position: absolute; width="100%" height="500" src="https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf" type="application/pdf"></iframe>
+<iframe -webkit-overflow-scrolling: touch;
+overflow-y: 
+scroll;position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+width="100%" height="500" src="https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf" type="application/pdf"></iframe>
