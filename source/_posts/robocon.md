@@ -22,5 +22,4 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-
-<object data="http://photo.lyh.best/2021/03/09/3b998d820df3b.pdf " type="application/pdf" width="100%" height="877px">
+<iframe width="100%" height="500" src="http://photo.lyh.best/2021/03/09/3b998d820df3b.pdf"></iframe>
