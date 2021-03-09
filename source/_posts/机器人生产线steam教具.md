@@ -115,7 +115,7 @@ STEAM旨在培养孩子独立思考、分析问题、解决问题的能力。将
 根据以上的需求与功能分析，我们设计出如下图3.1所示的STEAM机械臂教具概念图。该方案的硬件主要由机械臂、传送带、控制器和传感器组成。机械臂由多个可拆卸的关节组成，控制器为Arduino Uno开发板，传感器有超声波传感器。
 学生可以通过可视化编程的方式把控制代码烧录到Arduino Uno开发板中，以此来控制机械臂进行相关的实验。
 <img src="https://photo.lyh.best/2021/02/26/9152a5e7799a6.png" alt="STEAM机械臂教具概念图" width="50%" height="50%">
-<img src="https://photo.lyh.best/2021/02/26/5a9a646e036a9.png" alt="STEAM机械臂教具概念图" width="50%" height="50%">
+<img src="https://photo.lyh.best/2021/02/26/5a9a646e036a9.png" alt="STEAM教具实际效果图" width="50%" height="50%">
 
 ### 机械臂结构设计
 #### 机械臂方案一
