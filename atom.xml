@@ -6,7 +6,7 @@
   <link href="https://hexo.lyh.best/atom.xml" rel="self"/>
   
   <link href="https://hexo.lyh.best/"/>
-  <updated>2021-03-09T13:17:15.995Z</updated>
+  <updated>2021-03-09T13:22:16.892Z</updated>
   <id>https://hexo.lyh.best/</id>
   
   <author>
@@ -17,18 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>robo</title>
+    <link href="https://hexo.lyh.best/20210309/robo/"/>
+    <id>https://hexo.lyh.best/20210309/robo/</id>
+    <published>2021-03-09T13:20:35.000Z</published>
+    <updated>2021-03-09T13:22:16.892Z</updated>
+    
+    <content type="html"><![CDATA[<iframe width="100%" height="100%" src="https://hexo.lyh.best/20210309/robocon/"></iframe>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://hexo.lyh.best/20210309/robocon/&quot;&gt;&lt;/iframe&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>robocon</title>
     <link href="https://hexo.lyh.best/20210309/robocon/"/>
     <id>https://hexo.lyh.best/20210309/robocon/</id>
     <published>2021-03-09T11:40:30.000Z</published>
-    <updated>2021-03-09T13:17:15.995Z</updated>
+    <updated>2021-03-09T13:21:57.630Z</updated>
     
-    <content type="html"><![CDATA[<iframe width="100%" height="100%" src="http://photo.lyh.best/2021/03/09/3b998d820df3b.pdf"></iframe>]]></content>
+    <content type="html"><![CDATA[<iframe width="100%" height="100%" src="https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf"></iframe>]]></content>
     
     
       
       
-    <summary type="html">&lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;http://photo.lyh.best/2021/03/09/3b998d820df3b.pdf&quot;&gt;&lt;/iframe&gt;</summary>
+    <summary type="html">&lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf&quot;&gt;&lt;/iframe&gt;</summary>
       
     
     
@@ -373,25 +393,6 @@
     
     
     <category term="Scratch" scheme="https://hexo.lyh.best/tags/Scratch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>恭喜我院喜提robocon季军</title>
-    <link href="https://hexo.lyh.best/20201025/%E6%81%AD%E5%96%9C%E7%B2%A4%E6%B8%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/"/>
-    <id>https://hexo.lyh.best/20201025/%E6%81%AD%E5%96%9C%E7%B2%A4%E6%B8%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/</id>
-    <published>2020-10-25T12:24:03.000Z</published>
-    <updated>2020-10-29T16:01:44.090Z</updated>
-    
-    <content type="html"><![CDATA[<p>感叹一下，黄埔四期的师弟们太强了！<br>在全国大学生机器人Robocon大赛决赛中，广工代表队（由粤港机器人联合学院2018级学生28人组成）在赛场上顽强拼搏，实现历史性突破，以总成绩100和总时间387分的成绩，从全国75支队伍中脱颖而出，名列全国高校第三名，荣获全国一等奖。这是广工代表队连续参加五届比赛中的最好成绩。组委会组织专家组对所有申请高校作品进行严格遴选，最后，广东工业大学和东北大学两支高校机器人代表队获选，将代表中国参加第十九届亚太大学生机器人大赛（ABU Robocon2020）国际交流大会，与东京大学等世界名校共同竞技。<br><img src="https://i.loli.net/2020/10/28/4wcHJYexWjCNntv.jpg" alt="IMG_2036(20201025-173232).JPG"><br><img src="https://i.loli.net/2020/10/28/s8aQZdUOGvESXhi.jpg" alt="IMG_2035(20201025-173227).JPG"><br><img src="https://i.loli.net/2020/10/28/Jej6459Zwlzo2Sd.jpg" alt="IMG_2037(20201025-173236).JPG"><br><img src="https://i.loli.net/2020/10/28/EDKgj6d9O4wIBYq.jpg" alt="IMG_2038(20201025-175303).JPG"></p>]]></content>
-    
-    
-    <summary type="html">记录粤港机器人学院的历史时刻</summary>
-    
-    
-    
-    <category term="机器人学院" scheme="https://hexo.lyh.best/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/"/>
-    
     
   </entry>
   
