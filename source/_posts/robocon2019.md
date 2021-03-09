@@ -1,6 +1,6 @@
 ---
-title: robocon
-date: 2021-03-09 19:40:30
+title: robocon2019
+date: 2018-12-12 19:40:30
 updated:
 tags:
 categories:
@@ -21,6 +21,7 @@ katex:
 aplayer:
 highlight_shrink:
 aside:
-layout: false
 ---
-<iframe width="100%" height="100%" src="https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf"></iframe>
+[2019n Robocon 快马加鞭方案报告](https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf)
+### 预览
+{% pdf https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf %}
