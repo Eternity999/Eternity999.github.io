@@ -29,7 +29,7 @@ aside:
 [xbotpark粤港机器人学院](http://www.xbotpark.com/robotic/)
 [《香港文汇报》整版报道广工粤港机器人学院育人成果](https://m.sohu.com/a/306842205_201466)
 
-<iframe width="100%" height="500" src="http://www.xbotpark.com/robotic/"></iframe>
+<iframe width="100%" height="500" src="https://xbotpark.lyh.best/robotic/"></iframe>
 
 ### 招新宣传视频
 <video src="https://photo.lyh.best/2021/03/06/bd4fa18c9d8a0.mp4" alt="广东工业大学粤港机器人学院 2018 宣传视频_腾讯视频.mp4" title="广东工业大学粤港机器人学院 2018 宣传视频_腾讯视频.mp4" width="100%" height="100%" controls="controls"></video>
