@@ -22,6 +22,11 @@ aplayer:
 highlight_shrink:
 aside:
 ---
+
+<access origin="*" />
+<allow-navigation href="*" />
+<allow-intent href="*" />
+
 ### 相关介绍
 [粤港机器人联合学院简介](https://cxcy.gdut.edu.cn/info/1087/1428.htm)
 [粤港机器人联合学院【机器人工程专业】](https://zsb.gdut.edu.cn/info/1113/2742.htm)
