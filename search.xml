@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>QEA_Boat</title>
-      <link href="20210314/QEA-Boat/"/>
-      <url>20210314/QEA-Boat/</url>
-      
-        <content type="html"><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote><p>QEA is a second and third semester course that provides an integrated and project-based approach to teaching concepts in math, science, and engineering. In the first semester of the course (QEA I) topics include statics and multi-variable calculus taught in the context of a boat design project, linear algebra in the context of facial recognition software, and mechanics and controls in the context of mobile robots. In the second semester (QEA II), material focuses on topics in the frequency domain analysis of signals, dynamics in two and three dimensions, and basic controls including transfer functions, proportional, and proportional-differential control. The course uses projects to contextualize material and places an emphasis on self-directed learning. QEA is a prototype course that continues to undergo iteration at Olin.（<a href="https://www.olin.edu/academic-life/experience/quantitative-engineering-analysis/">Olin College of Engineering</a>）<br><img src="http://photo.lyh.best/2021/03/14/28b936d782224.png" alt="image.png"></p></blockquote><h3 id="curves1"><a href="#curves1" class="headerlink" title="curves1"></a>curves1</h3><div class="row">    <embed src="/pdf/QEA_Boat/curves1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="curves2"><a href="#curves2" class="headerlink" title="curves2"></a>curves2</h3><div class="row">    <embed src="/pdf/QEA_Boat/curves2.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="curves3"><a href="#curves3" class="headerlink" title="curves3"></a>curves3</h3><div class="row">    <embed src="/pdf/QEA_Boat/curves3.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="surfaces1"><a href="#surfaces1" class="headerlink" title="surfaces1"></a>surfaces1</h3><div class="row">    <embed src="/pdf/QEA_Boat/surfaces1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="surfaces2"><a href="#surfaces2" class="headerlink" title="surfaces2"></a>surfaces2</h3><div class="row">    <embed src="/pdf/QEA_Boat/surfaces2.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="surfaces3"><a href="#surfaces3" class="headerlink" title="surfaces3"></a>surfaces3</h3><div class="row">    <embed src="/pdf/QEA_Boat/surfaces3.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="centerofmass1"><a href="#centerofmass1" class="headerlink" title="centerofmass1"></a>centerofmass1</h3><div class="row">    <embed src="/pdf/QEA_Boat/centerofmass1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="centerofbuoyancy1"><a href="#centerofbuoyancy1" class="headerlink" title="centerofbuoyancy1"></a>centerofbuoyancy1</h3><div class="row">    <embed src="/pdf/QEA_Boat/centerofbuoyancy1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="qea-boat-report-final"><a href="#qea-boat-report-final" class="headerlink" title="qea_boat_report_final"></a>qea_boat_report_final</h3><div class="row">    <embed src="/pdf/QEA_Boat/qea_boat_report_final.pdf" width="100%" height="1100" type="application/pdf"></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> 机器人学院 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> MATLAB </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Markdown添加数学公式符号</title>
       <link href="20210314/Markdown%E6%B7%BB%E5%8A%A0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%AC%A6%E5%8F%B7/"/>
       <url>20210314/Markdown%E6%B7%BB%E5%8A%A0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%AC%A6%E5%8F%B7/</url>
@@ -605,6 +580,31 @@
         <tags>
             
             <tag> 机器人 </tag>
+            
+            <tag> MATLAB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>QEA_Boat</title>
+      <link href="20190916/QEA-Boat/"/>
+      <url>20190916/QEA-Boat/</url>
+      
+        <content type="html"><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote><p>QEA is a second and third semester course that provides an integrated and project-based approach to teaching concepts in math, science, and engineering. In the first semester of the course (QEA I) topics include statics and multi-variable calculus taught in the context of a boat design project, linear algebra in the context of facial recognition software, and mechanics and controls in the context of mobile robots. In the second semester (QEA II), material focuses on topics in the frequency domain analysis of signals, dynamics in two and three dimensions, and basic controls including transfer functions, proportional, and proportional-differential control. The course uses projects to contextualize material and places an emphasis on self-directed learning. QEA is a prototype course that continues to undergo iteration at Olin.（<a href="https://www.olin.edu/academic-life/experience/quantitative-engineering-analysis/">Olin College of Engineering</a>）<br><img src="http://photo.lyh.best/2021/03/14/28b936d782224.png" alt="image.png"></p></blockquote><h3 id="curves1"><a href="#curves1" class="headerlink" title="curves1"></a>curves1</h3><div class="row">    <embed src="/pdf/QEA_Boat/curves1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="curves2"><a href="#curves2" class="headerlink" title="curves2"></a>curves2</h3><div class="row">    <embed src="/pdf/QEA_Boat/curves2.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="curves3"><a href="#curves3" class="headerlink" title="curves3"></a>curves3</h3><div class="row">    <embed src="/pdf/QEA_Boat/curves3.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="surfaces1"><a href="#surfaces1" class="headerlink" title="surfaces1"></a>surfaces1</h3><div class="row">    <embed src="/pdf/QEA_Boat/surfaces1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="surfaces2"><a href="#surfaces2" class="headerlink" title="surfaces2"></a>surfaces2</h3><div class="row">    <embed src="/pdf/QEA_Boat/surfaces2.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="surfaces3"><a href="#surfaces3" class="headerlink" title="surfaces3"></a>surfaces3</h3><div class="row">    <embed src="/pdf/QEA_Boat/surfaces3.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="centerofmass1"><a href="#centerofmass1" class="headerlink" title="centerofmass1"></a>centerofmass1</h3><div class="row">    <embed src="/pdf/QEA_Boat/centerofmass1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="centerofbuoyancy1"><a href="#centerofbuoyancy1" class="headerlink" title="centerofbuoyancy1"></a>centerofbuoyancy1</h3><div class="row">    <embed src="/pdf/QEA_Boat/centerofbuoyancy1.pdf" width="100%" height="1100" type="application/pdf"></div><h3 id="qea-boat-report-final"><a href="#qea-boat-report-final" class="headerlink" title="qea_boat_report_final"></a>qea_boat_report_final</h3><div class="row">    <embed src="/pdf/QEA_Boat/qea_boat_report_final.pdf" width="100%" height="1100" type="application/pdf"></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器人学院 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> MATLAB </tag>
             
