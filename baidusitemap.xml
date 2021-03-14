@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hexo.lyh.best/20210309/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2021-03-14</lastmod>
+  </url>
+  <url>
     <loc>https://hexo.lyh.best/20210115/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/</loc>
     <lastmod>2021-03-14</lastmod>
   </url>
@@ -58,10 +62,6 @@
   </url>
   <url>
     <loc>https://hexo.lyh.best/20210307/%E5%9C%B0%E5%9D%80%E6%A0%8F%E5%9F%9F%E5%90%8D%E4%B8%AD%E6%8F%92%E5%85%A5%E7%A5%9E%E5%A5%87%E7%9A%84%E5%AE%9D%E8%B4%9D/</loc>
-    <lastmod>2021-03-09</lastmod>
-  </url>
-  <url>
-    <loc>https://hexo.lyh.best/20210309/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2021-03-09</lastmod>
   </url>
   <url>
