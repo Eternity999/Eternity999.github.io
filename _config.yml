@@ -48,7 +48,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -153,3 +153,8 @@ nofollow:
     exclude:
     #- www.langzi.fun
     #- 友链地址  
+
+# Pagination
+## Set per_page to 0 to disable pagination
+archive_generator:
+  per_page: 20

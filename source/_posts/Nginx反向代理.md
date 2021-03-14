@@ -24,6 +24,7 @@ aside:
 ---
 前两天的博文 [GDUT粤港机器人学院简介](/20210306/GDUT粤港机器人学院/) 里用 iframe 嵌套 [xbotpark机器人学院](http://www.xbotpark.com/robotic/) 的页面。由于 safari 中的 iframe 不支持 http 的加载，只支持 https。导致了手机上看到空白的 iframe 部分。而 xbotpark 的网站并没有配置 ssl，因此用自己的 vps 和域名对其反向代理再嵌套。
 Nginx配置中插入
+
 ```conf
 #PROXY-START/
 location  ~* \.(php|jsp|cgi|asp|aspx)$
