@@ -28,3 +28,4 @@ aside:
 [【古月居】古月 · ROS入门21讲](https://www.bilibili.com/video/av59458869/)
 [Documentation - ROS Wiki](http://wiki.ros.org/)
 [Blue Mountain 随笔分类 - ROS](https://www.cnblogs.com/BlueMountain-HaggenDazs/category/933843.html)
+[中国大学MOOC---《机器人操作系统入门》课程讲义](https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163)
