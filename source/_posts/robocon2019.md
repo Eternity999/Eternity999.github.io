@@ -24,4 +24,4 @@ aside:
 ---
 [2019Robocon 快马加鞭方案报告](https://photo.lyh.best/2021/03/09/3b998d820df3b.pdf)
 ### 预览
-{% pdf \2019Robocon 快马加鞭方案报告\2019Robocon 快马加鞭方案报告.pdf %}
+{% pdf \pdf\2019Robocon快马加鞭方案报告\2019Robocon快马加鞭方案报告.pdf %}
