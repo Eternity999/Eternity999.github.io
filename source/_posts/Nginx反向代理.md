@@ -53,5 +53,11 @@ location /
 
 #PROXY-END/
 ```
+
+### 推荐工具
+**DigitalOcean推出的Nginx配置文件生成器**
+基本上涵盖了常见的情况。当然也可以用来学习nginx的配置。界面提供中文。
+[Nginx配置文件生成器](https://www.digitalocean.com/community/tools/nginx)
+
 ### 参考资料
 [nginx教程](https://nginx.rails365.net/)
