@@ -130,3 +130,4 @@ jQuery(function(){
 
 ### 关联阅读
 [Hexo博客之butterfly主题优雅魔改系列（持续更新）](https://www.cnblogs.com/antmoe/p/12846393.html)
+[Pug 中文文档](https://www.pugjs.cn/language/includes.html)
