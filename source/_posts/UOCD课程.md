@@ -56,4 +56,4 @@ Learn interaction design between product functionality and contextual stakeholde
 
 
 ### 最后
-部分Reading材料以及上课资料放在了本 Blog 的 GitHub 仓库里。
+部分Reading材料以及上课资料放在了本 Blog 的 [GitHub 仓库](https://github.com/Eternity999/Eternity999.github.io/tree/master/pdf/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1UOCD)里。
