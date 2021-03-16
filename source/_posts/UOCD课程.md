@@ -26,6 +26,7 @@ aside:
 ---
 >Students develop detailed concepts and models of authentic new products and services. Our focus is on user-oriented, collaborative approaches to design and seeking holistic solutions integrating user and functional perspectives. We emphasize the importance of process and the development of strategies. Students observe and engage people to develop a deep understanding of their values and the patterns of their lives. They work collaboratively in a studio environment to create a shared understanding of the people they design for (and with) and the product ideas they develop. Topics covered include design thinking, ethnographic methods, concept development and interaction design.[Olin College of Engineering](https://meet.olin.edu/olin-isms/user-oriented-collaborative-design-uocd)
 
+## 课程内容
 ### Course Description
 This course focuses on user-collaborative design methods for generating inclusive product solutions that integrate stakeholder and product functionality perspectives. Students create specified product concept models through the use of recursive user feedback, engagement methods, experimental prototyping, and divergent and convergent ideation strategies. Featured topics include design thinking; stakeholder research; concept development, screening, and selection; and interaction design.
 
@@ -52,3 +53,7 @@ Learn interaction design between product functionality and contextual stakeholde
 
 ### 上课平台
 [Canvas](https://canvas.instructure.com/)
+
+
+### 最后
+部分Reading材料以及上课资料放在了本 Blog 的 GitHub 仓库里。
