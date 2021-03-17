@@ -10,7 +10,7 @@ keywords:
 description: Markdown使用笔记（适用于mathjax）
 top _img:
 comments:
-cover: http://www.codingsoho.com/media/filer_public_thumbnails/filer_public/e0/11/e011e343-d76c-4803-8d4e-c2bde8911fce/markdown.jpg__800x450_q85_crop_subsampling-2.jpg
+cover: http://photo.lyh.best/2021/03/17/c8b8a1fe5784d.png
 toc:
 toc_number:
 copyright:
