@@ -1,9 +1,10 @@
 ---
 title: web性能压力测试工具--Web Bench
 tags:
-  - ''
-  - ''
-date: 2021-03-20 23:21:39
+  - '运维'
+  - '性能测试'
+  - '工具'
+date: 2020-02-23 23:21:39
 updated:
 categories:
 keywords:
@@ -79,3 +80,4 @@ webbench [option]... URL
 
 ### 参考资料
 [（总结）Web性能压力测试工具之WebBench详解](http://www.ha97.com/4623.html)
+[webbench源码分析](https://www.jianshu.com/p/dc1032b19c8d)
