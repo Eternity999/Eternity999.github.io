@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hexo.lyh.best/20210320/web%E6%80%A7%E8%83%BD%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://hexo.lyh.best/19981129/HelloWorld/</loc>
+    <lastmod>2021-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://hexo.lyh.best/20200223/web%E6%80%A7%E8%83%BD%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2021-03-20</lastmod>
   </url>
   <url>
@@ -143,10 +147,6 @@
   <url>
     <loc>https://hexo.lyh.best/20201021/%E8%8B%A5%E9%A5%AD/</loc>
     <lastmod>2020-11-12</lastmod>
-  </url>
-  <url>
-    <loc>https://hexo.lyh.best/19981129/HelloWorld/</loc>
-    <lastmod>2020-11-06</lastmod>
   </url>
   <url>
     <loc>https://hexo.lyh.best/20201019/PT%E7%AB%99%E6%96%B0%E6%89%8B%E6%8C%87%E5%8C%97/</loc>
