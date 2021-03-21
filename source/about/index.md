@@ -66,7 +66,9 @@ Hello！Welcome to [My Blog](https://hexo.lyh.best/)!
 
 * 微信支付:<img src="/img/wechatpay.jpg" alt="微信支付" width="25%" height="25%" align="left">
 * 支付宝:<img src="/img/alipay.jpg" alt="支付宝" width="25%" height="25%" align="left">
-[我的聚合收款](https://merger.lyh.best)
+* 爱发电：[https://afdian.net/@eternity999?tab=home](https://afdian.net/@eternity999?tab=home)
+<img src="/img/afdian-Eternity.jfif" alt="爱发电" width="25%" height="25%" align="left">
+* [我的聚合收款](https://merger.lyh.best)
 
 ### Copyright
 本博客上的所有文章均为原创，并使用 CC BY-NC-SA 4.0 即 [知识共享 署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 协议进行许可
