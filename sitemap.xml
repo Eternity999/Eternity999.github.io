@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hexo.lyh.best/about/index.html</loc>
+    
+    <lastmod>2021-03-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hexo.lyh.best/20210321/%E6%96%87%E6%A1%A3%E5%86%99%E4%BD%9C%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7/</loc>
     
     <lastmod>2021-03-21</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://hexo.lyh.best/20191201/%E5%9B%9B%E8%BD%B4%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8E%E5%85%AD%E8%BD%B4%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BB%BF%E7%9C%9F/</loc>
     
     <lastmod>2021-03-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.lyh.best/about/index.html</loc>
-    
-    <lastmod>2021-03-12</lastmod>
     
   </url>
   
@@ -417,14 +417,14 @@
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/tags/PT/</loc>
+    <loc>https://hexo.lyh.best/tags/MATLAB/</loc>
     <lastmod>2021-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hexo.lyh.best/tags/MATLAB/</loc>
+    <loc>https://hexo.lyh.best/tags/PT/</loc>
     <lastmod>2021-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
