@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>循迹小车 | Lyh's Blog</title><meta name="keywords" content="机器人,单片机"><meta name="author" content="Lyh,gdleeyh@gmail.com"><meta name="copyright" content="Lyh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="大一上项目设计课程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="循迹小车">
+<meta property="og:url" content="https://hexo.lyh.best/20180108/%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/index.html">
+<meta property="og:site_name" content="Lyh&#39;s Blog">
+<meta property="og:description" content="大一上项目设计课程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://photo.lyh.best/2021/03/09/1b8f4e6cb9780.jpeg">
+<meta property="article:published_time" content="2018-01-08T10:43:58.000Z">
+<meta property="article:modified_time" content="2023-10-29T14:51:50.492Z">
+<meta property="article:author" content="Lyh">
+<meta property="article:tag" content="机器人">
+<meta property="article:tag" content="单片机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://photo.lyh.best/2021/03/09/1b8f4e6cb9780.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://hexo.lyh.best/20180108/%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Lyh","link":"链接: ","source":"来源: Lyh's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2023-10-29 22:51:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = '1'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Lyh's Blog" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://lyh.best/images/me.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">42</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">24</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">2</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/index.html"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-link"></i><span> 留言板</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1%E4%BB%BB%E5%8A%A1%E5%8F%8A%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86"><span class="toc-text">课程设计任务及评分标准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%9B%BE"><span class="toc-text">附图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1%E4%BB%BB%E5%8A%A1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">课程设计任务解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E5%88%86%E6%9E%90"><span class="toc-text">任务分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E6%96%B9%E6%A1%88"><span class="toc-text">总体方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E9%80%BB%E8%BE%91"><span class="toc-text">核心逻辑</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%8F%E8%BD%A6%E5%90%84%E9%83%A8%E5%88%86%E7%94%B5%E8%B7%AF"><span class="toc-text">小车各部分电路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E6%B5%8B%E8%AF%95%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">搭建测试中遇到的问题及解决方案</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91"><span class="toc-text">视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(http://photo.lyh.best/2021/03/09/1b8f4e6cb9780.jpeg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lyh's Blog</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/index.html"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-link"></i><span> 留言板</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">循迹小车</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2018-01-08T10:43:58.000Z" title="发表于 2018-01-08 18:43:58">2018-01-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-29T14:51:50.492Z" title="更新于 2023-10-29 22:51:50">2023-10-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E9%99%A2/">机器人学院</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h3 id="课程设计任务及评分标准"><a href="#课程设计任务及评分标准" class="headerlink" title="课程设计任务及评分标准"></a>课程设计任务及评分标准</h3><ol>
+<li>课程设计按实验小组进行，为时三周，开始时间 2017 年 12 月 10日，结束时间 12 月 29日。考核时间为 2018 年 1 月 6 日（星期六）上午八点半，考核顺序抽签决定，抽签时间为 2018 年 1 月 5 日（星期五） 晚 7：30。 </li>
+<li>课程设计总分为 100 分，小车按要求完成指定各项功能的，可得满分为 95 分； 另外5 分作为小车速度加分。 </li>
+<li>小车依次经过 Figure1 标注 1 号点得 15 分、 2 号点再得 10 分， 3 号点再得 10分、 4 号点再得 10分、 5 号点再得 10 分、 6 号点再得 10 分、 7 号标注点再得 10 分、 8 号标注点得 10 分、 9 号标注点得 10 分， 一共95分；还有5分为时间上的加分，即小车能在50秒内完成路线的话，可得5分。 </li>
+<li>若为完成指定循迹，需在轨道上面做特殊标记的，可向核心教师团队申请，批准后可以在轨道上面做出特殊标记（每个小组仅允许作出一处特殊标记，标记不得使用总长度超过 250mm 的黑胶布）。对于在指定轨迹上做出标记的小组， 小车成绩扣 10 分。 </li>
+<li>每组在课程设计考核时，均有两次测试机会，以最好的一次成绩作为考核成绩。每次考核的用时为 70 秒，若超出 70 秒小车还没走完路线，则强制停止，以该停止点作为小车的终点并算分。 </li>
+<li>若在正式考核时两次测试均失败的小组，可提供课程设计期间调试循迹小车 完成情况最好的视频（该视频需值班老师或 TA 认证）给核心教师团队，核心教师团队根据认证视频给予评分， 小车总成绩扣除 25 分作为小车稳定性成绩失分。 </li>
+<li>小车在循迹过程中应跟随轨道，若脱离轨道，必须在 5 秒内返回到脱离轨道前的位置，否则判定此次测试结束；并以小车脱离轨道点为最终得分点计算得分。 </li>
+<li>若小车在循迹过程中进入岔道， 则此次测试成绩扣 5 分。每进入一个岔道扣5 分，直到此次考试结束。 </li>
+<li>小车须以轨道标记顺序依次经过各得分点，否则判定此次测试结束；只计算 按顺序经过的得分点分数。 </li>
+<li>考试时所用循迹小车必须为实验室提供的器件所搭建（部分特殊情况请联系TA 解决），否则不得参加考试。 </li>
+<li>循迹小车为机器人入门项目设计课程的期末考试，请各位认真对待。考试期间严禁使用通讯工具，发现违规者当场取消考试资格！ </li>
+<li>考试时间为上午 8： 30 到中午 12:00，考核期间没有监考 TA 允许不得私自离开考场。考核结束的同学请耐心等候通知。 </li>
+<li>本次考核结束后请在下周（2018.1.10号）晚上八点前上交循迹小车报告（文件名以“第×组+姓名” 发到班长邮箱，并由班长打包整理好后发给 TA 教师团队。） </li>
+<li>考核前可提出擦拭赛道的要求（避免有灰尘影响传感器灵敏度），但是不得破坏赛道。若发现违规者， 视赛道破坏情况扣除 5~25 分， 严重者直接取消考试资格！ </li>
+</ol>
+<h3 id="附图"><a href="#附图" class="headerlink" title="附图"></a>附图</h3><p>课程设计轨道如figure 1所示 ：<br><img src="http://photo.lyh.best/2021/03/09/5f682f0267020.png" alt="image.png"></p>
+<h3 id="课程设计任务解决方案"><a href="#课程设计任务解决方案" class="headerlink" title="课程设计任务解决方案"></a>课程设计任务解决方案</h3><h4 id="任务分析"><a href="#任务分析" class="headerlink" title="任务分析"></a>任务分析</h4><p>循迹路线主要包括以下关卡:（岔道、平滑曲线、Y字型分岔、垂直岔道、断口、直角拐弯）</p>
+<table><tr>
+<td><img src="http://photo.lyh.best/2021/03/09/3b502876f653e.png" alt="岔道" width="30%" height="30%"></td>
+<td><img src="https://i.loli.net/2020/10/29/j3dp14RgkZHOnYJ.png" alt="平滑曲线" width="30%" height="30%"></td>
+</tr>
+<tr>
+<td><img src="https://i.loli.net/2020/10/29/1DMdY5lL6WU9FnN.png" alt="Y字型分岔" width="30%" height="30%"></td>
+<td><img src="https://i.loli.net/2020/10/29/KaCBvXcHwdn68Fm.png" alt="垂直岔道" width="30%" height="30%"></td>
+</tr>
+<tr>
+<td><img src="https://i.loli.net/2020/10/29/RJsSChzM8nPk7pc.png" alt="断口" width="30%" height="30%"></td>
+<td><img src="https://i.loli.net/2020/10/29/4LEiaY3rsxF2OKR.png" alt="直角拐弯" width="30%" height="30%"></td>
+</tr></table>
+
+<h4 id="总体方案"><a href="#总体方案" class="headerlink" title="总体方案"></a>总体方案</h4><p>本设计提出通过 用三个红外灰度传感器对路线进行识别，通过逻辑电路处理信号控制调整电机正反转以完成前进及转向功能，使小车能够按照规定的轨迹（黑线）完成直线、直角、弯道和岔道的转向运动并最终到达终点。</p>
+<h4 id="核心逻辑"><a href="#核心逻辑" class="headerlink" title="核心逻辑"></a>核心逻辑</h4><ol>
+<li><p>将三个红外灰度传感器呈三角形排布：<br><img src="http://photo.lyh.best/2021/03/09/8f52049040f18.png" alt="image.png"></p>
+</li>
+<li><p>方法：分析关卡，探究在各关卡时三个红外灰度传感器分别的状态。依照各状态列出真值表以设计逻辑电路。</p>
+</li>
+<li><p>真值表：（列出所有状况，1为检测到白色，0为检测到黑色）</p>
+<table>
+<tr><td>传感器A</td><td>传感器B</td><td>传感器C</td><td>左轮</td><td>右轮</td><td>左轮状态</td><td>右轮状态</td><td>小车状态</td></tr>
+<tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>快速正转</td><td>快速正转</td><td>快速前进</td></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>快速正转</td><td>快速正转</td><td>快速前进</td></tr>
+<tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>快速正转</td><td>快速正转</td><td>快速前进</td></tr>
+<tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>快速正转</td><td>快速正转</td><td>快速前进</td></tr>
+<tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>快速正转</td><td>快速正转</td><td>快速前进</td></tr>
+<tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>快速正转</td><td>快速反转</td><td>右转</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>快速反转</td><td>快速正转</td><td>左转</td></tr>
+<tr><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>快速反转</td><td>快速正转</td><td>左转</td></tr>
+<tr><td></td></tr>
+</table>
+</li>
+<li><p>卡诺图<br>左：</p>
+<table>
+<tr><td>c\ab</td><td>00</td><td>01</td><td>11</td><td>10</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td></td></tr>
+</table>
+右：
+<table>
+<tr><td>c\ab</td><td>00</td><td>01</td><td>11</td><td>10</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td></td></tr>
+</table>
+</li>
+<li><p>通过卡诺图化简后的逻辑：<br>左轮信号逻辑：$ L=\bar{C}+A $<br>右轮信号逻辑：$ R=\bar{C}+B+\bar{A} $</p>
+</li>
+<li><p>逻辑电路：<br><img src="http://photo.lyh.best/2021/03/09/6775f7256580c.png" alt="逻辑电路.png"></p>
+</li>
+<li><p>通过逻辑电路对关卡的解决情况：<br>[1]在此点位时红外灰度传感器ABC将是001的状态，小车左转，避免进入右侧岔道。<br><img src="http://photo.lyh.best/2021/03/09/a296faf9d0bc4.png" alt="image.png"><br>[2]    在此点位时红外灰度传感器ABC将是010的状态，小车保持直线行走，避免进入左侧岔道。<br><img src="http://photo.lyh.best/2021/03/09/fc95ae0d276eb.png" alt="image.png"><br>[3]    在此点位时红外灰度传感器ABC将是011的状态，小车左转，通过左直角弯。（同理101时可转右直角弯）<br><img src="http://photo.lyh.best/2021/03/09/b1901a78ba059.png" alt="image.png"><br>[4]    在此点位时红外灰度传感器ABC将是111的状态，小车保持直走，一直到通过终点结束。<br><img src="http://photo.lyh.best/2021/03/09/d244fdc871b9b.png" alt="image.png"></p>
+</li>
+<li><p>确认所需逻辑门元件：非门74ls04<em>1、或门74ls32</em>1。</p>
+</li>
+</ol>
+<h4 id="小车各部分电路"><a href="#小车各部分电路" class="headerlink" title="小车各部分电路"></a>小车各部分电路</h4><ol>
+<li>芯片电源供电电路<br>通过lm1117稳压芯片将电压降到5v<br><img src="http://photo.lyh.best/2021/03/09/3e146da986560.png" alt="lm1117稳压芯片.png"></li>
+<li>PWM 信号产生电路<br><img src="http://photo.lyh.best/2021/03/09/40a7e7f20081d.png" alt="PWM 信号产生电路.png"></li>
+<li>逻辑电路<br><img src="http://photo.lyh.best/2021/03/09/eb39b1071fc54.png" alt="逻辑电路.png"></li>
+<li>电机驱动电路<br><img src="http://photo.lyh.best/2021/03/09/5b91a0cd1f0cd.png" alt="image.png"></li>
+</ol>
+<h4 id="搭建测试中遇到的问题及解决方案"><a href="#搭建测试中遇到的问题及解决方案" class="headerlink" title="搭建测试中遇到的问题及解决方案"></a>搭建测试中遇到的问题及解决方案</h4><p>[1]    两电机转速不一，无法正常直行，走线时摇摆剧烈，而且在关键关卡节点有较大几率出问题卡死或乱走。<br>解决方法：</p>
+<ol>
+<li>购买马达对电机内芯进行更换。</li>
+<li>加上电阻使转速较快一侧的轮子慢下来。（但由于实验室中可变电阻的调节精度太差难以调整到最佳状态，而且也浪费了电能）</li>
+</ol>
+<p>[2]    过直角弯时会冲出赛道，原因是小车速度太快，传感器不够灵敏，逻辑反应不过来。红外灰度传感器C还在黑线内，两侧的传感器A和B不能输出有效信号，且车轮反转速度不够快，导致小车冲出赛道。<br>解决方法：</p>
+<ol>
+<li>将传感器C往前移动，提前感知弯道。（距两侧传感器连线约2.5cm）</li>
+<li>调整方波占空比，使车轮反转速度与正转基本一致，使小车转向速度加快。</li>
+<li>输入更低供电电压，使小车整体行进速度降低。</li>
+</ol>
+<p>[3]    电压高于9v时，部分逻辑电路失效，无法完成逻辑运算。<br>解决方法：</p>
+<ol>
+<li>部分逻辑门芯片的输入电压高于5v后无法辨别高低电平，由稳压芯片LM1117输出稳定5v电压供给所有逻辑电路芯片。</li>
+</ol>
+<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><p><video src="http://photo.lyh.best/2021/03/09/fe48e532490c9.mp4" alt="小车竞赛.mp4" width="100%" height="100%" controls="controls"></video><br><video src="http://photo.lyh.best/2021/03/09/1b671f0825d45.mp4" alt="小车竞赛.mp4" width="100%" height="100%" controls="controls"></video></p>
+<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p>[1]张宝荣.数字电子技术基础（第二版）[M].北京：电子工业出版社，2015：1-38.<br>[2]初永丽，王雪琪，范丽杰. 模拟电子技术基础 [M].西安: 西安电子科技大学出版社, 2016:</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:gdleeyh@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">Lyh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://hexo.lyh.best/20180108/%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/">https://hexo.lyh.best/20180108/%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://hexo.lyh.best" target="_blank">Lyh's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/">机器人</a><a class="post-meta__tags" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">单片机</a></div><div class="post_share"><div class="social-share" data-image="http://photo.lyh.best/2021/03/09/1b8f4e6cb9780.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechatpay.jpg" alt="wechat"></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/20180210/%E5%9F%BA%E4%BA%8Emsp430%E7%9A%84%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/"><img class="prev-cover" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2288807196,2079760474&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">基于msp430的循迹小车</div></div></a></div><div class="next-post pull-right"><a href="/19981129/HelloWorld/"><img class="next-cover" src="https://i.loli.net/2020/11/06/gWhZ8lCfOyJ6TxY.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World！</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/20180210/基于msp430的循迹小车/" title="基于msp430的循迹小车"><img class="cover" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2288807196,2079760474&fm=26&gp=0.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-02-10</div><div class="title">基于msp430的循迹小车</div></div></a></div><div><a href="/20210116/机器人生产线steam教具/" title="机器人生产线STEAM教具"><img class="cover" src="https://photo.lyh.best/2021/02/26/5e2c16d473cc9.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-16</div><div class="title">机器人生产线STEAM教具</div></div></a></div><div><a href="/20210306/GDUT粤港机器人学院/" title="GDUT粤港机器人学院简介"><img class="cover" src="https://i.loli.net/2020/10/28/nabOY3419j6VXiP.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-06</div><div class="title">GDUT粤港机器人学院简介</div></div></a></div><div><a href="/20200101/ROS学习笔记/" title="ROS学习笔记"><img class="cover" src="http://img.mp.itc.cn/upload/20160727/fb97e098cbad4fb7ba59a046784fd49c_th.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-01</div><div class="title">ROS学习笔记</div></div></a></div><div><a href="/20210115/串行总线舵机/" title="串行总线舵机"><img class="cover" src="https://store.hiwonder.com/uploads/20201202/FrwHZQR-p10bCHAHUWT4eJOiESuN/LX-225.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-15</div><div class="title">串行总线舵机</div></div></a></div><div><a href="/20191201/四轴机器人与六轴机器人仿真/" title="四轴机器人与六轴机器人仿真(不完整)"><img class="cover" src="http://photo.lyh.best/2021/03/14/b04695fc25e63.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-12-01</div><div class="title">四轴机器人与六轴机器人仿真(不完整)</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Livere</span><label><input id="switch-comments-btn" type="checkbox"><span class="slider"></span></label><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81MTgwOC8yODI4OQ=="></div></div><div><div id="disqus_thread"></div></div></div></div></article></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Lyh</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://hexo.lyh.best/20180108/%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/'
+    this.page.identifier = '20180108/循迹小车/'
+    this.page.title = '循迹小车'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://lyhbest.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Livere' === 'Disqus' || !false) {
+  if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zindex="-1" mobile="false" data-click="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script></div></body></html>

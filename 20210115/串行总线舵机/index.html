@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>串行总线舵机 | Lyh's Blog</title><meta name="keywords" content="机器人"><meta name="author" content="Lyh,gdleeyh@gmail.com"><meta name="copyright" content="Lyh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="幻尔串行总线舵机使用经验">
+<meta property="og:type" content="article">
+<meta property="og:title" content="串行总线舵机">
+<meta property="og:url" content="https://hexo.lyh.best/20210115/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/index.html">
+<meta property="og:site_name" content="Lyh&#39;s Blog">
+<meta property="og:description" content="幻尔串行总线舵机使用经验">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://store.hiwonder.com/uploads/20201202/FrwHZQR-p10bCHAHUWT4eJOiESuN/LX-225.png">
+<meta property="article:published_time" content="2021-01-15T15:27:29.000Z">
+<meta property="article:modified_time" content="2023-10-29T14:51:50.491Z">
+<meta property="article:author" content="Lyh">
+<meta property="article:tag" content="机器人">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://store.hiwonder.com/uploads/20201202/FrwHZQR-p10bCHAHUWT4eJOiESuN/LX-225.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://hexo.lyh.best/20210115/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Lyh","link":"链接: ","source":"来源: Lyh's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2023-10-29 22:51:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = '1'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Lyh's Blog" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://lyh.best/images/me.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">42</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">24</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">2</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/index.html"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-link"></i><span> 留言板</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E8%88%B5%E6%9C%BA-ID"><span class="toc-text">设置舵机 ID</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E4%BF%A1%E5%8F%8A-GUI"><span class="toc-text">通信及 GUI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://store.hiwonder.com/uploads/20201202/FrwHZQR-p10bCHAHUWT4eJOiESuN/LX-225.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lyh's Blog</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/index.html"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-link"></i><span> 留言板</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">串行总线舵机</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-15T15:27:29.000Z" title="发表于 2021-01-15 23:27:29">2021-01-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-29T14:51:50.491Z" title="更新于 2023-10-29 22:51:50">2023-10-29</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h3 id="设置舵机-ID"><a href="#设置舵机-ID" class="headerlink" title="设置舵机 ID"></a>设置舵机 ID</h3><p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://store.hiwonder.com/2020/06/16/Bus%20Servo%20Terminal%20V1.7.exe">Bus Servo Terminal</a> 幻尔总线舵机调试系统，用于设置每个舵机的 ID。</p>
+<h3 id="通信及-GUI"><a href="#通信及-GUI" class="headerlink" title="通信及 GUI"></a>通信及 GUI</h3><p>别问我为什么明明之前深度学习那课设还用 PyQt 现在却用 EasyGui 这样老又不再更新的东西，问就是懒……<br>通过查阅购买产品后提供的<a href="https://hexo.lyh.best/pdf/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/%E5%B9%BB%E5%B0%94%E7%A7%91%E6%8A%80%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE.pdf">幻尔科技总线舵机通信协议</a>，编写与舵机的通信命令以及图形化界面。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> easygui</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> serial</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment">##命令发送</span></span><br><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">servoWriteCmd</span>(<span class="params"><span class="built_in">id</span>, cmd, par1 = <span class="literal">None</span>, par2 = <span class="literal">None</span></span>):</span></span><br><span class="line">    buf = <span class="built_in">bytearray</span>(<span class="string">b&#x27;\x55\x55&#x27;</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="built_in">len</span> = <span class="number">3</span>   <span class="comment">#若命令是没有参数的话数据长度就是3</span></span><br><span class="line">        buf1 = <span class="built_in">bytearray</span>(<span class="string">b&#x27;&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment">## 对参数进行处理</span></span><br><span class="line">        <span class="keyword">if</span> par1 <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">len</span> += <span class="number">2</span>  <span class="comment">#数据长度加2</span></span><br><span class="line">            par1 = <span class="number">0xffff</span> &amp; par1</span><br><span class="line">            buf1.extend([(<span class="number">0xff</span> &amp; par1), (<span class="number">0xff</span> &amp; (par1 &gt;&gt; <span class="number">8</span>))])  <span class="comment">#分低8位 高8位 放入缓存</span></span><br><span class="line">        <span class="keyword">if</span> par2 <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">len</span> += <span class="number">2</span></span><br><span class="line">            par2 = <span class="number">0xffff</span> &amp; par2</span><br><span class="line">            buf1.extend([(<span class="number">0xff</span> &amp; par2), (<span class="number">0xff</span> &amp; (par2 &gt;&gt; <span class="number">8</span>))])  <span class="comment">#分低8位 高8位 放入缓存</span></span><br><span class="line">    </span><br><span class="line">        buf.extend([(<span class="number">0xff</span> &amp; <span class="built_in">id</span>), (<span class="number">0xff</span> &amp; <span class="built_in">len</span>), (<span class="number">0xff</span> &amp; cmd)]) <span class="comment">#追加 id， 数据长度， 命令</span></span><br><span class="line">        buf.extend(buf1) <span class="comment">#追加参数</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">##计算校验和</span></span><br><span class="line">        <span class="built_in">sum</span> = <span class="number">0x00</span></span><br><span class="line">        <span class="keyword">for</span> b <span class="keyword">in</span> buf: <span class="comment">#求和</span></span><br><span class="line">            <span class="built_in">sum</span> += b</span><br><span class="line">        <span class="built_in">sum</span> = <span class="built_in">sum</span> - <span class="number">0x55</span> - <span class="number">0x55</span>  <span class="comment">#去掉命令开头的两个 0x55</span></span><br><span class="line">        <span class="built_in">sum</span> = ~<span class="built_in">sum</span>  <span class="comment">#取反</span></span><br><span class="line">        buf.append(<span class="number">0xff</span> &amp; <span class="built_in">sum</span>)  <span class="comment">#取低8位追加进缓存</span></span><br><span class="line">        </span><br><span class="line">        serialHandle.write(buf) <span class="comment">#发送</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(e)</span><br><span class="line"></span><br><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment">##读取位置</span></span><br><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">readPosition</span>(<span class="params"><span class="built_in">id</span></span>):</span></span><br><span class="line">    <span class="comment">#portWrite() #将单线串口配置为输出</span></span><br><span class="line">    serialHandle.flushInput() <span class="comment">#清空接收缓存</span></span><br><span class="line">    servoWriteCmd(<span class="built_in">id</span>, command[<span class="string">&quot;POS_READ&quot;</span>]) <span class="comment">#发送读取位置命令</span></span><br><span class="line">    time.sleep(<span class="number">0.00034</span>)  <span class="comment">#小延时，等命令发送完毕。不知道是否能进行这么精确的延时的，但是修改这个值的确实会产生影响。</span></span><br><span class="line">                         <span class="comment">#实验测试调到这个值的时候效果最好</span></span><br><span class="line">    <span class="comment">#portRead() #将单线串口配置为输入</span></span><br><span class="line">    time.sleep(<span class="number">0.005</span>)  <span class="comment">#稍作延时，等待接收完毕</span></span><br><span class="line">    count = serialHandle.inWaiting() <span class="comment">#获取接收缓存中的字节数</span></span><br><span class="line">    pos = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">if</span> count != <span class="number">0</span>: <span class="comment">#如果接收到的数据不空</span></span><br><span class="line">        recv_data = serialHandle.read(count) <span class="comment">#读取接收到的数据</span></span><br><span class="line">        <span class="keyword">if</span> count == <span class="number">8</span>: <span class="comment">#如果接收到的数据是8个字节（符合位置读取命令的返回数据的长度）</span></span><br><span class="line">            <span class="keyword">if</span> recv_data[<span class="number">0</span>] == <span class="number">0x55</span> <span class="keyword">and</span> recv_data[<span class="number">1</span>] == <span class="number">0x55</span> <span class="keyword">and</span> recv_data[<span class="number">4</span>] == <span class="number">0x1C</span> :</span><br><span class="line">                <span class="comment">#第一第二个字节等于0x55, 第5个字节是0x1C 就是 28 就是 位置读取命令的命令号</span></span><br><span class="line">                 pos= <span class="number">0xffff</span> &amp; (recv_data[<span class="number">5</span>] | (<span class="number">0xff00</span> &amp; (recv_data[<span class="number">6</span>] &lt;&lt; <span class="number">8</span>))) <span class="comment">#将接收到的字节数据拼接成完整的位置数据</span></span><br><span class="line">                 <span class="comment">#上面这小段代码我们简化了操作没有进行和校验，只要帧头和命令对了就认为数据无误</span></span><br><span class="line">                 </span><br><span class="line">    <span class="keyword">return</span> pos  <span class="comment">#返回读取到的位置</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">portx = <span class="string">&quot;COM5&quot;</span></span><br><span class="line">bps = <span class="number">115200</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 超时设置，None：永远等待操作；</span></span><br><span class="line"><span class="comment">#         0：立即返回请求结果；</span></span><br><span class="line"><span class="comment">#        其他：等待超时时间（单位为秒）</span></span><br><span class="line">timex = <span class="literal">None</span></span><br><span class="line">serialHandle = serial.Serial(portx, bps, timeout=timex)</span><br><span class="line">command = &#123;<span class="string">&quot;MOVE_WRITE&quot;</span>: <span class="number">1</span>, <span class="string">&quot;POS_READ&quot;</span>: <span class="number">28</span>, <span class="string">&quot;LOAD_UNLOAD_WRITE&quot;</span>: <span class="number">31</span>&#125;</span><br><span class="line"></span><br><span class="line">pos = []</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line"></span><br><span class="line">    msg = <span class="string">&quot;舵机状态&quot;</span></span><br><span class="line">    title = <span class="string">&quot;机械臂&quot;</span></span><br><span class="line">    choice = easygui.indexbox(msg, title, choices=(<span class="string">&#x27;读取&#x27;</span>, <span class="string">&#x27;移动&#x27;</span>,<span class="string">&#x27;上电&#x27;</span>,<span class="string">&#x27;掉电&#x27;</span>))</span><br><span class="line">    duoji = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">id</span> <span class="keyword">in</span> duoji:</span><br><span class="line">        servoWriteCmd(<span class="built_in">id</span>, command[<span class="string">&quot;LOAD_UNLOAD_WRITE&quot;</span>], <span class="number">0</span>)  <span class="comment"># 命令马达掉点，使舵机可以用手扭动</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">str</span>(choice) == <span class="string">&#x27;0&#x27;</span>:</span><br><span class="line">        pos = []</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        for id in duoji:</span></span><br><span class="line"><span class="string">            pos.append(readPosition(id))</span></span><br><span class="line"><span class="string">            # easygui.msgbox(&quot;舵机位置为：&quot; + str(readPosition(id)))  # readPosition(id)读取位置</span></span><br><span class="line"><span class="string">            servoWriteCmd(id, command[&quot;LOAD_UNLOAD_WRITE&quot;], 0)  # 命令马达掉电，使舵机可以用手扭动</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        pos.append(readPosition(<span class="number">1</span>))</span><br><span class="line">        pos.append(readPosition(<span class="number">2</span>))</span><br><span class="line">        pos.append(readPosition(<span class="number">3</span>))</span><br><span class="line">        pos.append(readPosition(<span class="number">4</span>))</span><br><span class="line">        easygui.msgbox(<span class="string">&quot;舵机1状态为：&quot;</span>+<span class="built_in">str</span>(readPosition(<span class="number">1</span>))+<span class="string">&quot;\n舵机2状态为：&quot;</span>+<span class="built_in">str</span>(readPosition(<span class="number">2</span>))+<span class="string">&quot;\n舵机3状态为：&quot;</span>+<span class="built_in">str</span>(readPosition(<span class="number">3</span>))+<span class="string">&quot;\n舵机4状态为：&quot;</span>+<span class="built_in">str</span>(readPosition(<span class="number">4</span>)),<span class="string">&quot;结果&quot;</span>)  <span class="comment">#readPosition(id)读取位置</span></span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">str</span>(choice) == <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">        <span class="keyword">for</span> id_index <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(duoji)):</span><br><span class="line">            <span class="built_in">id</span> = duoji[id_index]</span><br><span class="line">            servoWriteCmd(<span class="built_in">id</span>, command[<span class="string">&quot;MOVE_WRITE&quot;</span>], pos[id_index], <span class="number">200</span>)  <span class="comment"># 移动的代码</span></span><br><span class="line">        easygui.msgbox(<span class="string">&quot;正在移动&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">str</span>(choice)==<span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">        <span class="keyword">for</span> <span class="built_in">id</span> <span class="keyword">in</span> duoji:</span><br><span class="line">            servoWriteCmd(<span class="built_in">id</span>, command[<span class="string">&quot;LOAD_UNLOAD_WRITE&quot;</span>], <span class="number">1</span>) <span class="comment">#发送写入上电命令</span></span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">str</span>(choice)==<span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">        <span class="keyword">for</span> <span class="built_in">id</span> <span class="keyword">in</span> duoji:</span><br><span class="line">            servoWriteCmd(<span class="built_in">id</span>, command[<span class="string">&quot;LOAD_UNLOAD_WRITE&quot;</span>], <span class="number">0</span>) <span class="comment">#发送写入掉电命令</span></span><br><span class="line"></span><br><span class="line">    msg = <span class="string">&quot;你希望重新读取状态？&quot;</span></span><br><span class="line">    title = <span class="string">&quot;请选择&quot;</span></span><br><span class="line">    <span class="keyword">if</span> easygui.ccbox(msg, title):</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        sys.exit(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a target="_blank" rel="external nofollow noopener noreferrer" href="http://easygui.sourceforge.net/tutorial.html">EasyGUI Tutorial</a></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:gdleeyh@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">Lyh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://hexo.lyh.best/20210115/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/">https://hexo.lyh.best/20210115/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://hexo.lyh.best" target="_blank">Lyh's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/">机器人</a></div><div class="post_share"><div class="social-share" data-image="https://store.hiwonder.com/uploads/20201202/FrwHZQR-p10bCHAHUWT4eJOiESuN/LX-225.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechatpay.jpg" alt="wechat"></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/20210116/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%94%9F%E4%BA%A7%E7%BA%BFsteam%E6%95%99%E5%85%B7/"><img class="prev-cover" src="https://photo.lyh.best/2021/02/26/5e2c16d473cc9.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">机器人生产线STEAM教具</div></div></a></div><div class="next-post pull-right"><a href="/20210106/%E6%85%A7%E7%BC%96%E7%A8%8B%E6%8B%93%E5%B1%95%E5%BC%80%E5%8F%91/"><img class="next-cover" src="https://i0.hdslb.com/bfs/face/7cd003bf1b123ec05e7ec9399bb0e992f0a5b6a4.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">慧编程拓展开发</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/20210306/GDUT粤港机器人学院/" title="GDUT粤港机器人学院简介"><img class="cover" src="https://i.loli.net/2020/10/28/nabOY3419j6VXiP.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-06</div><div class="title">GDUT粤港机器人学院简介</div></div></a></div><div><a href="/20200101/ROS学习笔记/" title="ROS学习笔记"><img class="cover" src="http://img.mp.itc.cn/upload/20160727/fb97e098cbad4fb7ba59a046784fd49c_th.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-01</div><div class="title">ROS学习笔记</div></div></a></div><div><a href="/20191201/四轴机器人与六轴机器人仿真/" title="四轴机器人与六轴机器人仿真(不完整)"><img class="cover" src="http://photo.lyh.best/2021/03/14/b04695fc25e63.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-12-01</div><div class="title">四轴机器人与六轴机器人仿真(不完整)</div></div></a></div><div><a href="/20200107/基于ROS系统下的轨迹规划/" title="基于ROS系统下的轨迹规划"><img class="cover" src="https://photo.lyh.best/2021/03/14/8b0f11e316989.png"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-07</div><div class="title">基于ROS系统下的轨迹规划</div></div></a></div><div><a href="/20180210/基于msp430的循迹小车/" title="基于msp430的循迹小车"><img class="cover" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2288807196,2079760474&fm=26&gp=0.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-02-10</div><div class="title">基于msp430的循迹小车</div></div></a></div><div><a href="/20180108/循迹小车/" title="循迹小车"><img class="cover" src="http://photo.lyh.best/2021/03/09/1b8f4e6cb9780.jpeg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-01-08</div><div class="title">循迹小车</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Livere</span><label><input id="switch-comments-btn" type="checkbox"><span class="slider"></span></label><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81MTgwOC8yODI4OQ=="></div></div><div><div id="disqus_thread"></div></div></div></div></article></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Lyh</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://hexo.lyh.best/20210115/%E4%B8%B2%E8%A1%8C%E6%80%BB%E7%BA%BF%E8%88%B5%E6%9C%BA/'
+    this.page.identifier = '20210115/串行总线舵机/'
+    this.page.title = '串行总线舵机'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://lyhbest.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Livere' === 'Disqus' || !false) {
+  if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zindex="-1" mobile="false" data-click="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script></div></body></html>
